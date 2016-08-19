@@ -1,0 +1,55 @@
+@import 'modules/reset';
+@import 'modules/tune';
+@import 'modules/icons';
+@import 'modules/mixins';
+
+@import 'sprite';
+@import 'variables';
+@import 'fonts';
+
+@import 'components/container';
+@import 'components/navbar';
+@import 'components/nav-tabs';
+@import 'components/buttons';
+@import 'components/typogrphy';
+@import 'components/features';
+@import 'components/cols';
+@import 'components/doctorlist';
+@import 'components/services';
+@import 'components/how-works';
+@import 'components/faq';
+@import 'components/partners';
+@import 'components/footer';
+@import 'components/checkbox';
+@import 'components/header';
+@import 'components/main-form';
+@import 'components/dropdown';
+@import 'components/menu-tabs';
+@import 'components/input-group';
+@import 'components/menu-list';
+@import 'components/doctors-item-list';
+@import 'components/popup-form';
+@import 'components/popup-choose';
+@import 'components/registration-form';
+@import 'components/datepicker';
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: $bg-color;
+	font-family: San Francisco;
+	text-rendering: optimizeLegibility;
+}
+
+.hero-home {
+	height: 785px;
+	background-image: url("../assets/home-bg-pic.jpg");
+	background-size: 100% 100%;
+}
+
+.hero-form {
+	background-color: $btn-hover;
+	padding-bottom: 40px;
+}

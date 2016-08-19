@@ -1,0 +1,90 @@
+.features {
+	position: relative;
+
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+.feature {
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin: 0 10px 0 0;
+	width: 290px;
+	text-align: center;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:before {
+		position: absolute;
+	}
+}
+
+.home-features {
+	
+}
+
+.home-feature {
+	margin: 135px 50px 0 0;
+	width:260px;
+	padding: 0 30px;
+	color: $white;
+
+	&:before {
+		top: -85px;
+		left: 105px;
+	}
+}
+
+.home-feature__easy:before {
+	@include icon(home-feature__easy);
+}
+
+.home-feature__transparent:before {
+	@include icon(home-feature__transparent);
+}
+
+.home-feature__safe:before {
+	@include icon(home-feature__safe);
+}
+
+.home-feature__actuall:before {
+	@include icon(home-feature__actuall);
+	top: -80px;
+}
+
+.home-feature_text {
+	margin: 10px 0 0 -25px;
+	width: 250px;
+	line-height: 1.5;
+	color: #d5e4ed;
+	font-size: 16px;
+}
+
+.home-feature_title {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.hero-numbers {
+	background-color: #d5e4ed;
+}
+
+.features-numbers {
+	padding: 48px 0;
+	color: $dark-gray;
+}
+
+.feature-numbers_num {
+	font-size: 32px;
+}
+
+.feature-numbers_title  {
+	margin: 3px 0 0;
+}

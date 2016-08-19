@@ -1,0 +1,230 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="assets/main.css")
+  body
+    
+    .hero
+      .header
+        .container
+          ul
+            li
+              .header_brand
+              .header_city
+                .header_city-logo
+                a.link-dashed.header_city-name(href="#") Санкт-Петербург
+            li.header_btn
+              a(href="#") Медучреждения
+            li.header_btn
+              a(href="#") Врачи
+            li
+              .header_info-text 24ч  Запись, помощь, справка:
+              .header_phone +7 (812) 426-17-27
+      .hero.hero-form
+        .container
+          ul.nav-tabs
+            li.is-active
+              a(href="#") В поликлинику
+              .tooltip
+                .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
+            li
+              a(href="#") По направлению
+            li
+              a(href="#") Мои записи
+          ul.input-group
+              li
+                .dropdown
+                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region Район города
+                  ul.dropdown-menu.main.is-hidden
+                    li.btn-lg
+                      a(href="#") Калининский район
+                    li.btn-lg
+                      a(href="#") Петроградский район
+                    li.btn-lg
+                      a(href="#") Выборгский район
+                    li.btn-lg
+                      a(href="#") Невский район 
+              li
+                .dropdown
+                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
+                  ul.dropdown-menu.main.is-hidden
+                    li.btn-lg
+                      a(href="#") Калининский район
+                    li.btn-lg
+                      a(href="#") Петроградский район
+                    li.btn-lg
+                      a(href="#") Выборгский район
+                    li.btn-lg
+                      a(href="#") Невский район 
+
+              li.to-right
+                button.btn.btn-primary.btn-lg Искать
+
+      .hero
+        .container
+          ul.menu-list
+            li
+              h6 Укажите специализацию
+            li.is-active 
+              a Терапевт
+            li 
+              a Акушер-гинеколог
+            li 
+              a Педиатр
+            li 
+              a Хирург
+            li 
+              a Невролог
+            li 
+              a Офтальмолог
+            li 
+              a ЛОР
+            li 
+              a Стоматолог
+            li
+              a.link-dashed показать больше
+          ul.doctors-item-list
+            li
+              h6 Выберите врача и время
+            li
+              ul.doctor-item-list.col.col-md8
+                li
+                  ul.doctor-item
+                    li.to-left.doctor-pic
+                    li.to-left
+                      .doctor-name Кирилл Никитин
+                      .doctor-specialist Терапевт
+                      .doctor-status Врач высшей категории
+                    li.to-right
+                      button.btn.btn-success.btn-primary выбрать время
+                    li.to-right
+                      .doctor-time 15:00
+                    li.to-right
+                      .doctor-tickets 14 талонов
+                      .doctor-from_date с 12 июня 2016
+                      .doctor-ticketsoff нет талонов
+
+                li.registration-form
+                  .registration-form_block.registration-form_block-date
+                    .registration-form_block-title Доступные дни приёма
+
+                    #datepicker
+
+                    .registration-form_agenda
+                      .agenda-block.agenda-block__picked Выбранный день
+                      .agenda-block.agenda-block__availible Дни Приёма
+                      .agenda-block.agenda-block__weekend Нерабочие дни
+                      .agenda-block.agenda-block__today Сегодня
+
+                  .registration-form_block.registration-form_block-time
+                    .registration-form_block-title Доступное время приёма
+                    .registration-form_timedesk
+                      ul.timedesk
+                        li.doctor-time.timedesk_item-picked 14:00
+                        li.doctor-time 15:00
+                        li.doctor-time 16:00
+                        li.doctor-time 17:00
+                        li.doctor-time.timedesk_item-disabled 18:00
+                      ul.timedesk
+                        li.doctor-time 20:00
+                        li.doctor-time 21:00
+                    .registration-form_final
+                      .little-text Выбрано
+                      .registration-form_final-item.registration-form_final-time 14:00,
+                      .registration-form_final-item.registration-form_final-date 12 июн 2016
+                      button.btn.btn-md.btn-success.btn-primary Подтвердить
+
+
+                li
+                  ul.doctor-item.ticketsoff
+                    li.to-left.doctor-pic
+                    li.to-left
+                      .doctor-name Кирилл Никитин
+                      .doctor-specialist Терапевт
+                      .doctor-status Врач высшей категории
+                    li.to-right
+                      button.btn.btn-success.btn-primary выбрать время
+                    li.to-right
+                      .doctor-time 15:00
+                    li.to-right
+                      .doctor-tickets 14 талонов
+                      .doctor-from_date с 12 июня 2016
+                      .doctor-ticketsoff Нет талонов
+                    
+      .footer
+        .container
+          .footer-brand
+          .footer-list
+            ul 
+              li 
+                p О проекте
+              li 
+                a(href="#") О проекте
+              li 
+                a(href="#") Команда
+            ul
+              li
+                p Пользователи
+              li
+                a(href="#") Как это работает?
+              li
+                a(href="#") Правовая информация
+              li
+                a(href="#") Вопрос - Ответ
+
+            ul
+              li
+                p Контакты
+              li
+                a(href="#") Обратная связь
+              li
+                a(href="#") Адреса и телефоны
+              li
+                a(href="#") ВКонтакте
+              li
+                a(href="#") Facebook
+              li
+                a(href="#") Одноклассники
+
+            ul
+              li.phone
+                .little-text Телефон в Санкт-Петербурге:
+                h2 +7 (812) 426-17-27
+              li.phone
+                .little-text Телефон по России:
+                h2 8 800 426-17-27
+              li.phone
+                .little-text Телефон скорой помощи:
+                h2 03 или 103 (моб.)
+
+
+            ul
+              li
+                p Пресс-центр
+              li
+                a(href="#") СМИ о нас
+
+            ul
+              li
+                p Медучреждения
+              li
+                a(href="#") Стать партнером
+              li
+                a(href="#") Правовая информация
+
+
+
+
+          .footer-underline
+          a.footer-studio(href="http://oniverse.co/") Дизайн от ONIVERSE
+          .footer-phone Все права защищены. 2016
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
+    script(src='assets/doctors.js')
+
+
+
+              

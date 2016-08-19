@@ -1,0 +1,38 @@
+.col {
+	float: left;
+	background-color: $white;
+	border-radius: 4px;
+	box-shadow: 2px 2px 1px 1px $light-gray;
+	min-width: 290px;
+	min-height: 65px;
+	padding: 35px 30px;
+	text-align: center;
+}
+
+.col-md3 {
+	width: 290px;
+}
+
+.col-md4 {
+	width: 390px;
+}
+
+.col-md6 {
+	width: 590px;
+}
+
+.col-md8 {
+
+	width: 790px;
+}
+
+.col-md12 {
+	width: 1190px;
+	margin: 35px 5px 0;
+	padding: 35px 0;
+}
+
+.hero-how_works,
+.hero-faq .col {
+		margin: 35px 5px 0 5px;
+}

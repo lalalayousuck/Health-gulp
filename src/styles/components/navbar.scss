@@ -1,0 +1,40 @@
+.navbar {
+  position: relative;
+  height: 70px;
+  background-color: $blue;
+  width: 100%;
+  color: $white;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  li {
+    float: left;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .nav-user {
+    position: relative;
+    float: right;
+    padding-top: 27px;
+
+    &:before {
+      @include icon(user-cabinet);
+      position: absolute;
+      left: -25px;
+    }
+  }
+}
+
+.nav-pill {
+  margin: 0 14px 0 0;
+  padding-top: 27px;
+
+  a {
+    border-bottom: 1px solid $dark-blue;
+    padding: 0 12px 4px;
+    box-sizing: content-box;
+  }
+}

@@ -1,0 +1,198 @@
+$sprite: (
+	arrow_right_light: (
+		offset-x: -527px,
+		offset-y: -140px,
+		width: 14px,
+		height: 84px,
+	),
+	blue-list-bg-arrow: (
+		offset-x: 0px,
+		offset-y: -212px,
+		width: 323px,
+		height: 38px,
+	),
+	check-in: (
+		offset-x: -527px,
+		offset-y: -230px,
+		width: 14px,
+		height: 20px,
+	),
+	corner-big-how-works: (
+		offset-x: -527px,
+		offset-y: 0px,
+		width: 15px,
+		height: 134px,
+	),
+	corner-gray-right: (
+		offset-x: -527px,
+		offset-y: -276px,
+		width: 8px,
+		height: 13px,
+	),
+	gerb-spb: (
+		offset-x: -420px,
+		offset-y: -165px,
+		width: 17px,
+		height: 20px,
+	),
+	home-dropdown__doctor: (
+		offset-x: -351px,
+		offset-y: -212px,
+		width: 16px,
+		height: 12px,
+	),
+	home-feature__actuall: (
+		offset-x: -460px,
+		offset-y: -329px,
+		width: 54px,
+		height: 54px,
+	),
+	home-feature__easy: (
+		offset-x: 0px,
+		offset-y: -338px,
+		width: 64px,
+		height: 66px,
+	),
+	home-feature__safe: (
+		offset-x: 0px,
+		offset-y: -410px,
+		width: 46px,
+		height: 60px,
+	),
+	home-feature__transparent: (
+		offset-x: -460px,
+		offset-y: -132px,
+		width: 60px,
+		height: 60px,
+	),
+	how-feature__search: (
+		offset-x: -460px,
+		offset-y: -66px,
+		width: 61px,
+		height: 60px,
+	),
+	how-feature__sign: (
+		offset-x: -460px,
+		offset-y: -198px,
+		width: 59px,
+		height: 60px,
+	),
+	how-feature__time: (
+		offset-x: -460px,
+		offset-y: 0px,
+		width: 61px,
+		height: 60px,
+	),
+	how-feature__visit: (
+		offset-x: -460px,
+		offset-y: -264px,
+		width: 52px,
+		height: 59px,
+	),
+	ico-calendar: (
+		offset-x: -485px,
+		offset-y: -389px,
+		width: 19px,
+		height: 14px,
+	),
+	ico-exit: (
+		offset-x: -420px,
+		offset-y: -140px,
+		width: 18px,
+		height: 19px,
+	),
+	ico_arrow_down_s: (
+		offset-x: -527px,
+		offset-y: -295px,
+		width: 6px,
+		height: 4px,
+	),
+	ico_date: (
+		offset-x: -460px,
+		offset-y: -389px,
+		width: 19px,
+		height: 14px,
+	),
+	ico_helper: (
+		offset-x: -527px,
+		offset-y: -256px,
+		width: 14px,
+		height: 14px,
+	),
+	lock-green-form: (
+		offset-x: -420px,
+		offset-y: -106px,
+		width: 20px,
+		height: 28px,
+	),
+	logo-desktop: (
+		offset-x: -70px,
+		offset-y: -338px,
+		width: 100px,
+		height: 40px,
+	),
+	logotype_black: (
+		offset-x: -217px,
+		offset-y: -256px,
+		width: 223px,
+		height: 23px,
+	),
+	logotype_white: (
+		offset-x: -217px,
+		offset-y: -285px,
+		width: 223px,
+		height: 23px,
+	),
+	miac: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 224px,
+		height: 100px,
+	),
+	reksoft: (
+		offset-x: 0px,
+		offset-y: -106px,
+		width: 224px,
+		height: 100px,
+	),
+	services-feature__kt: (
+		offset-x: -230px,
+		offset-y: -106px,
+		width: 100px,
+		height: 95px,
+	),
+	services-feature__mrt: (
+		offset-x: -336px,
+		offset-y: -106px,
+		width: 78px,
+		height: 87px,
+	),
+	services-feature__rentgen: (
+		offset-x: -127px,
+		offset-y: -256px,
+		width: 84px,
+		height: 76px,
+	),
+	services-feature__uzi: (
+		offset-x: 0px,
+		offset-y: -256px,
+		width: 121px,
+		height: 76px,
+	),
+	skolkovo: (
+		offset-x: -230px,
+		offset-y: 0px,
+		width: 224px,
+		height: 100px,
+	),
+	user-cabinet: (
+		offset-x: -329px,
+		offset-y: -212px,
+		width: 16px,
+		height: 16px,
+	),
+);
+
+$spritesheet-width: 542px;
+$spritesheet-height: 470px;
+$spritesheet-image: "sprite.png";

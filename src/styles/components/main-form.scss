@@ -1,0 +1,11 @@
+.main-form {
+	width: 100%;
+	text-align: center;
+	background-color: $bg-color;
+	padding: 25px 40px 40px;
+	border-radius: 0 $border-radius $border-radius $border-radius;
+}
+
+.main-form > .nav-tabs {
+	width: 1120px;
+}

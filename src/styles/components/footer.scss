@@ -1,0 +1,93 @@
+.footer {
+	height: 505px;
+	background-color: $footer-bg;
+	padding: 80px 0 0;
+}
+
+.footer-brand {
+  @include icon(logo-desktop);
+  position: absolute;
+  cursor: pointer;
+}
+
+.footer-list {
+	position: absolute;
+	top: -20px;
+	left: 300px;
+
+	p {
+		color: #c5ccd6;
+		font-weight: 100;
+		font-size: 18px;
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	ul {
+		float: left;
+
+		&:first-child {
+			margin-right: 114px;
+		}
+
+		&:nth-child(2) {
+			margin-right: 118px;
+		}
+
+		&:nth-child(3) {
+			margin-right: 92px;
+		}
+
+		&:nth-child(5) {
+			margin-right: 92px;
+		}
+
+
+		li {
+			margin: 0 0 15px;
+		}
+
+		.phone {
+			color: #c5ccd6;
+
+			h2 {
+				margin: 15px 0;
+				font-size: 20px;
+				font-weight: 600;
+			}
+		}
+	}
+	
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+.footer-studio,
+.footer-phone {
+	position: absolute;
+	top: 393px;
+	left: 5px;
+	color: $semidark-gray;
+	font-size: 12px;
+}
+
+.footer-phone {
+	left: 1035px;
+}
+
+.footer-underline {
+	position: absolute;
+	top: 383px;
+	width: 1200px;
+	height: 1px;
+	background-color: $semidark-gray;
+}

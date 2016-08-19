@@ -1,0 +1,133 @@
+.doctor-item-list.col {
+	padding: 0 25px;
+}
+
+.doctors-item-list {
+	float: left;
+
+	> li:first-child {
+		margin: 30px 0 0;
+	}
+
+	> li:last-child {
+		margin: -18px 0 0 -5px;
+	}
+}
+
+.doctor-item-list {
+	> li {
+		padding-top: 15px;
+		height: 104px;
+		border-bottom: 1px solid $light-gray;
+	}
+
+	> li:last-child {
+		border-bottom: 0;
+	}
+}
+
+.doctor-item-list.col {
+	margin: 35px 5px 0 5px;
+}
+
+.doctor-item {
+	> li {
+		position: relative;
+		padding-top: 16px;
+		border: 0;
+		
+		&:nth-child(2) {
+			text-align: left;
+		}
+
+		&:nth-child(5) {
+			padding-top: 23px;
+		}
+
+		&:nth-child(3) {
+			padding-top: 21px;
+		}
+
+		&:nth-child(4) {
+			padding-top: 22px;
+			margin: 0 25px;
+		}
+	}
+
+	> li.to-left {
+		float: left;
+	}
+
+	> li.to-right {
+		float: right;
+	}
+}
+
+.doctor-pic {
+	position: relative;
+	margin: 8px 25px 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url("../assets/doctor.jpg");
+	background-size: cover;
+	border-radius: 30px;
+}
+
+.doctor-name {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.doctor-specialist {
+	float: left;
+	margin-top: 9px;
+	font-size: 14px;
+	color: $dark-gray;
+}
+
+.doctor-status {
+	float: left;
+	margin: 10px 17px 0;
+	font-size: 12px;
+	color: $font-disabled;
+}
+
+.doctor-tickets {
+	font-size: 12px;
+	color: $dark-green;
+}
+
+.doctor-from_date {
+	font-size: 12px;
+	color: $dark-gray;
+}
+
+.doctor-time {
+	padding: 5px 15px;
+	border: 2px solid #a8d66b;
+	border-radius: 30px;
+	font-size: 14px;
+}
+
+.doctor-ticketsoff {
+	display: none;
+	position: absolute;
+	top: 27px;
+	left: -45px;
+	width: 100px;
+	font-size: 14px;
+	color: $font-disabled;
+}
+
+.doctor-item.ticketsoff {
+	.doctor-time, 
+	.doctor-tickets, 
+	.doctor-from_date, 
+	button {
+		display: none;
+	}
+}
+
+.doctor-item.ticketsoff .doctor-ticketsoff {
+	display: block;
+}

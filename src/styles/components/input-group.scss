@@ -1,0 +1,22 @@
+.input-group {
+	margin: 20px 0 0;
+
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+
+	li {
+		float: left;
+		margin: 0 16px 0 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	li.to-right {
+		float: right;
+	}
+}

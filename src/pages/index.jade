@@ -1,0 +1,494 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="assets/main.css")
+  body
+    
+    .hero
+      .hero-home
+        .container
+          .header
+            ul
+              li
+                .header_brand
+                .header_city
+                  .header_city-logo
+                  a.link-dashed.header_city-name(href="#") Санкт-Петербург
+              li.header_btn
+                a(href="#") Медучреждения
+              li.header_btn
+                a(href="#") Врачи
+              li
+                .header_info-text 24ч  Запись, помощь, справка:
+                .header_phone +7 (812) 426-17-27
+
+          h1.home.large-centered-heading 
+            | Запись взрослых и детей на приём
+            br
+            | в государственные клиники
+          ul.menu-tabs
+            li.menu-tab.active Запись по ОМС
+            li.menu-tab.disabled Платный приём
+            li.menu-tab.disabled На диагностику
+          .main-form
+            ul.nav-tabs
+              li.is-active
+                a(href="#") В поликлинику
+                .tooltip
+                  .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
+              li
+                a(href="#") По направлению
+              li
+                a(href="#") Мои записи
+          
+            ul.input-group
+              li
+                .dropdown
+                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region Район города
+                  ul.dropdown-menu.main
+                    li.btn-lg
+                      a(href="#") Калининский район
+                    li.btn-lg
+                      a(href="#") Петроградский район
+                    li.btn-lg
+                      a(href="#") Выборгский район
+                    li.btn-lg
+                      a(href="#") Невский район 
+              li
+                .dropdown
+                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
+                  ul.dropdown-menu.main
+                    li.btn-lg
+                      a(href="#") Калининский район
+                    li.btn-lg
+                      a(href="#") Петроградский район
+                    li.btn-lg
+                      a(href="#") Выборгский район
+                    li.btn-lg
+                      a(href="#") Невский район 
+
+              li.to-right
+                button.btn.btn-success.btn-primary.btn-lg Перейти к записи
+
+          
+          .features.home-features
+            .feature.home-feature.home-feature__easy
+              .home-feature_title Без очередей
+              .home-feature_text Врач примет в удобное для Вас время
+            .feature.home-feature.home-feature__safe
+              .home-feature_title Надежно
+              .home-feature_text Заботимся о безопасности Ваших данных в рамках законов РФ
+            .feature.home-feature.home-feature__actuall
+              .home-feature_title Актуально
+              .home-feature_text Все государственные клиники Вашего города в режиме онлайн
+            .feature.home-feature.home-feature__transparent
+              .home-feature_title Удобно
+              .home-feature_text 
+                | Запись к врачу 
+                br
+                | в 3 клика
+                
+
+      .hero.hero-numbers
+        .container
+          .features.features-numbers
+            .feature
+              .feature-numbers_num 292 800
+              .feature-numbers_title 
+                | человек записались
+                br
+                | с помощью сервиса
+            .feature
+              .feature-numbers_num 300
+              .feature-numbers_title 
+                | государственных
+                br
+                | клиник
+            .feature
+              .feature-numbers_num 12 000
+              .feature-numbers_title 
+                | врачей всех
+                br
+                | специальностей
+            .feature
+              .feature-numbers_num 60
+              .feature-numbers_title 
+                | секунд в среднем
+                br
+                | на запись к врачу
+
+
+      
+      //- .hero.hero-doctorlist
+      //-   .container
+      //-     h3 Выберите врача и запишитесь на прием
+      //-     button.btn.btn-wide-important.btn-toright см. все
+      //-     .features.doctorlist-features
+      //-       .feature
+      //-         ul.doctorlist.doctorlist__a
+      //-           li
+      //-             a(href="#")
+      //-               | Абилитолог
+      //-               span 124
+      //-           li
+      //-             a(href="#")
+      //-               | Акушер
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Аллерголог
+      //-               span 12
+      //-         ul.doctorlist.doctorlist__v
+      //-           li
+      //-             a(href="#")
+      //-               | Врач общей практики
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Венеролог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Врач по ЛФК
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__g
+      //-           li
+      //-             a(href="#") 
+      //-               | Гастроэнтеролог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Гематолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Генеколог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__d
+      //-           li
+      //-             a(href="#") 
+      //-               | Дерматолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Диетолог
+      //-               span 124
+
+      //-       .feature
+      //-         ul.doctorlist.doctorlist__i
+      //-           li
+      //-             a(href="#") 
+      //-               | Инфекционист
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Иммунолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__k
+      //-           li
+      //-             a(href="#") 
+      //-               | Кардиолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__l
+      //-           li
+      //-             a(href="#") 
+      //-               | Логопед
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__m
+      //-           li
+      //-             a(href="#") 
+      //-               | Маммолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__n
+      //-           li
+      //-             a(href="#") 
+      //-               | Нефролог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Неонатолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__o
+      //-           li
+      //-             a(href="#") 
+      //-               | Онколог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Отоларинголог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Ортопед
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Офтальмолог
+      //-               span 124
+      //-       .feature
+      //-         ul.doctorlist.doctorlist__p
+      //-           li
+      //-             a(href="#") 
+      //-               | Педиатр
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Психолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Психотерапевт
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Пульмонолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__r
+      //-           li
+      //-             a(href="#") 
+      //-               | Реабилитолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Ревматолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Рентгенолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__s
+      //-           li
+      //-             a(href="#") 
+      //-               | Сексолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Стоматолог
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Стоматолог-детский
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Стоматолог-хирург
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Стоматолог-ортопед
+      //-               span 124
+      //-       .feature
+      //-         ul.doctorlist.doctorlist__t
+      //-           li
+      //-             a(href="#") 
+      //-               | Терапевт
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Травмотолог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__y
+      //-           li
+      //-             a(href="#") 
+      //-               | Уролог
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__f
+      //-           li
+      //-             a(href="#") 
+      //-               | Физиотерапевт
+      //-               span 124
+      //-           li
+      //-             a(href="#") 
+      //-               | Фтизиатр
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__h
+      //-           li
+      //-             a(href="#") 
+      //-               | Хирург
+      //-               span 124
+      //-         ul.doctorlist.doctorlist__ue
+      //-           li
+      //-             a(href="#") 
+      //-               | Эндокринолог
+      //-               span 124 
+
+      //- .hero.hero-services
+      //-   .container
+      //-     h3 Пройдите диагностические исследования
+      //-     button.btn.btn-wide-important.btn-toright см. все
+      //-     .features
+      //-       .feature.services-feature.services-feature__uzi
+      //-         .col.col-md3
+      //-           h4 Узи
+      //-           ul.services-list
+      //-             li при беременности
+      //-             li малого таза
+      //-             li брюшной полости
+      //-             li почек
+      //-             li молочных желез
+      //-           button.btn-wide-important.btn показать больше
+      //-       .feature.services-feature.services-feature__kt
+      //-         .col.col-md3
+      //-           h4 КТ
+      //-           ul.services-list
+      //-             li грудной клетки
+      //-             li головного мозга
+      //-             li брюшной полости
+      //-             li почек
+      //-             li позвоночника
+      //-           button.btn.btn-wide-important показать больше
+      //-       .feature.services-feature.services-feature__mrt
+      //-         .col.col-md3
+      //-           h4 МРТ
+      //-           ul.services-list
+      //-             li грудной клетки
+      //-             li отдела позвоночника
+      //-             li всего позвоночника
+      //-             li коленного сустава
+      //-             li брюшной полости
+      //-           button.btn.btn-wide-important показать больше
+      //-       .feature.services-feature.services-feature__rentgen
+      //-         .col.col-md3
+      //-           h4 Рентген
+      //-           ul.services-list
+      //-             li при беременности
+      //-             li малого таза
+      //-             li брюшной полости
+      //-             li почек
+      //-             li молочных желез
+      //-           button.btn.btn-wide-important показать больше
+
+      .hero.hero-how_works
+        .container
+          .col.col-md12
+            h3 Как работает сервис
+            .features
+              .feature.how-feature.how-feature__sign
+                h5 1
+                p  
+                  | Введите свои данные
+                  br
+                  | и выберите район
+              .feature.how-feature.how-feature__search
+                h5 2
+                p 
+                  | Подберите подходящего
+                  br
+                  | специалиста
+              .feature.how-feature.how-feature__time
+                h5 3
+                p Запишитесь в удобное время
+              .feature.how-feature.how-feature__visit
+                h5 4
+                p 
+                  |Посетите врача
+                  sup *
+            .little-text 
+              | Захватите с собой полис ОМС и паспорт. Если у вас нет полиса ОМС —  узнайте как его получить 
+              a(href="#") здесь.
+
+      .hero.hero-faq
+        .container
+          .col.col-md8.faq
+            h3 Часто задаваемые вопросы
+            ul.faq-list
+              li 
+                a(href="#") Что делать, если нужно записаться на приём к врачу?
+              li 
+                a(href="#") В какую поликлинику обращаться?
+              li 
+                a(href="#") Как записаться?
+              li 
+                a(href="#") Можно ли попасть к узному специаоисту в поликлинике "в обход" терапевта?
+              li 
+                a(href="#") В какую поликлинику обращаться?
+            button.btn.btn-wide-important См. всех
+
+          .col.col-md4.support
+            h3 Служба поддержки
+            h6 
+              | Остались вопросы? Позвоните нам по телефону или 
+              a(href="#") напишите
+              |  онлайн помощнику и мы обязательно постараемся помочь вам.
+            h3 8(812) 426-17-27
+
+      .hero.hero-partners
+        .container
+          .partners
+            .partner
+              h3 Партнёры проекта
+            .partner.partner__miaz
+            .partner.partner__skolkovo
+            .partner.partner__reksoft
+
+      .footer
+        .container
+          .footer-brand
+          .footer-list
+            ul 
+              li 
+                p О проекте
+              li 
+                a(href="#") О проекте
+              li 
+                a(href="#") Команда
+            ul
+              li
+                p Пользователи
+              li
+                a(href="#") Как это работает?
+              li
+                a(href="#") Правовая информация
+              li
+                a(href="#") Вопрос - Ответ
+
+            ul
+              li
+                p Контакты
+              li
+                a(href="#") Обратная связь
+              li
+                a(href="#") Адреса и телефоны
+              li
+                a(href="#") ВКонтакте
+              li
+                a(href="#") Facebook
+              li
+                a(href="#") Одноклассники
+
+            ul
+              li.phone
+                .little-text Телефон в Санкт-Петербурге:
+                h2 +7 (812) 426-17-27
+              li.phone
+                .little-text Телефон по России:
+                h2 8 800 426-17-27
+              li.phone
+                .little-text Телефон скорой помощи:
+                h2 03 или 103 (моб.)
+
+
+            ul
+              li
+                p Пресс-центр
+              li
+                a(href="#") СМИ о нас
+
+            ul
+              li
+                p Медучреждения
+              li
+                a(href="#") Стать партнером
+              li
+                a(href="#") Правовая информация
+
+
+
+
+          .footer-underline
+          a.footer-studio(href="http://oniverse.co/") Дизайн от ONIVERSE
+          .footer-phone Все права защищены. 2016
+
+    script(src='/assets/main.js')

@@ -1,0 +1,62 @@
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid $semidark-gray;
+  border-radius: $border-radius;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+
+  .btn-right {
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    padding-top: 0px;
+  }
+}
+
+.btn-success {
+  border: none;
+  background-color: $green;
+  color: $white;
+  box-shadow: 0 2px 0 $dark-green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+}
+
+.btn-primary {
+  text-transform: uppercase;
+}
+
+.btn-md {
+  height: 46px;
+  padding: 7px 13px;
+  font-size: 15px;
+}
+
+.btn-lg {
+  width: 200px;
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+
+
+.btn-toright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-wide-important {
+  padding: 7px 40px;
+  text-transform: uppercase;
+}

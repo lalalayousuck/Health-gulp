@@ -1,0 +1,82 @@
+.ui-datepicker {
+	width: 100%;
+	text-align: center;
+
+
+}
+
+.ui-datepicker-header {
+	position: relative;
+	height: 50px;
+	padding: 14px;
+	font-size: 16px;
+	border-bottom: 1px solid $light-gray;
+}
+
+.ui-datepicker-prev {
+	@include triangle(r, #68707b, 8px, 8px);
+	position: absolute;
+	top: 15px;
+	left: 52px;
+}
+
+.ui-datepicker-next {
+	@include triangle(l, #68707b, 8px, 8px);
+	position: absolute;
+	top: 15px;
+	left: 237px;
+}
+
+.ui-datepicker-calendar {
+	width: 100%;
+	height: 284px;
+	border-bottom: 1px solid $light-gray;
+
+	td {
+		margin: 10px 15px 10px 0;
+		vertical-align: middle;
+		
+		a {
+			box-sizing: border-box;
+			width: 30px;
+			height: 30px;
+			padding: 4px;
+			border-radius: 6px;
+			cursor: pointer;
+
+			&:hover {
+				color: $black;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.ui-datepicker-calendar .ui-state-active {
+	background-color: $green;
+	color: $white;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+.ui-datepicker-calendar .ui-state-availible {
+	border: 2px solid $green;
+}
+
+.ui-datepicker-calendar .ui-state-highlight {
+	color: $green;
+}
+
+.ui-state-highlight.ui-state-active {
+	color: $white;
+}
+
+.ui-datepicker-calendar .ui-state-disabled {
+	color: $font-disabled;
+	cursor: default;
+}

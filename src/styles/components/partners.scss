@@ -1,0 +1,33 @@
+.partners {
+  
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.partner {
+  float: left;
+  margin: 40px 75px 50px 0;
+
+  &:first-child {
+    margin: 70px 150px 0 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.partner__miaz {
+  @include icon(miac);
+}
+
+.partner__skolkovo {
+  @include icon(skolkovo);
+}
+
+.partner__reksoft {
+  @include icon(reksoft);
+}

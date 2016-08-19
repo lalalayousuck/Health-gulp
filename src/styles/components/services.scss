@@ -1,0 +1,55 @@
+.hero-services {
+  margin: 90px 0 0;
+
+  h4 {
+    margin: 130px 0 0;
+  }
+}
+
+.services-list {
+  margin: 25px 0 40px;
+  text-align: left;
+
+  li {
+    position: relative;
+    margin: 0 0 20px;
+
+    &:after {
+      @include icon(corner-gray-right);
+      position: absolute;
+      top: 3px;
+      right: 0;
+    }
+  }
+}
+
+.services-feature {
+  .btn {
+    font-size: 12px;
+  }
+
+  &:before {
+    top: 65px;
+    left: 100px;
+  }
+}
+
+.services-feature__uzi:before {
+  @include icon(services-feature__uzi);
+  left: 90px;
+}
+
+.services-feature__kt:before {
+  @include icon(services-feature__kt);
+  top: 55px;
+}
+
+.services-feature__mrt:before {
+  @include icon(services-feature__mrt);
+  left: 110px;
+}
+
+.services-feature__rentgen:before {
+  @include icon(services-feature__rentgen);
+  left: 110px;
+}

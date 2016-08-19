@@ -1,0 +1,25 @@
+.menu-tabs {
+	margin: 0;
+
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+.menu-tab {
+	float: left;
+	margin: 0 2px 0 0;
+	width: 240px;
+	height: 56px;
+	background-color: $bg-color;
+	padding: 20px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: $border-radius $border-radius 0 0;
+}
+
+.menu-tab.disabled {
+	background-color: #c8d9dc;
+}

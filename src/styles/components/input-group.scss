@@ -1,6 +1,19 @@
-.input-group {
-	margin: 20px 0 0;
+.input-groups {
+	position: relative;
+	margin: 26px 0 0;
+	height: 46px;
 
+	.little-text {
+		margin: 0;
+		text-align: left;
+	}
+}
+
+.input-group {
+	width: 100%;
+	position: absolute;
+
+	
 	&:after {
 		display: block;
 		clear: both;
@@ -16,7 +29,35 @@
 		}
 	}
 
-	li.to-right {
+	> li.to-right {
 		float: right;
 	}
+}
+
+.input-group2 {
+	.doctor-ticket {
+		margin: 0 0 0 40px;
+		width: 512px;
+		
+	}
+}
+
+.input-group3 {
+	> li {
+		&:first-child,
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+	}
+}
+
+
+.input-group1,
+.input-group2,
+.input-group3 {
+	display: none;
+}
+
+.input-group.is-active {
+	display: block;
 }

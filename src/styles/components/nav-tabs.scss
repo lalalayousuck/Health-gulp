@@ -1,6 +1,6 @@
 .nav-tabs {
   width: 1200px;
-  padding: 25px 0 0;
+  padding: 23px 0 0;
   border-bottom: 1px solid $dark-ambient;
   text-align: center;
 
@@ -15,10 +15,12 @@
     float: left;
     width: 200px;
     font-weight: 600;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 
     a {
       color: $font-disabled;
+      font-size: 16px;
+      letter-spacing: -1px;
     }
   }
 
@@ -35,8 +37,8 @@
 .tooltip {
   @include icon(ico_helper);
   position: absolute;
-  top: 2px;
-  left: 170px;
+  top: 0;
+  right: 5px;
   cursor: pointer;
 
   &:hover .tooltip-text {

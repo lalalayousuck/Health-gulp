@@ -27,12 +27,12 @@ li.registration-form {
 }
 
 .registration-form_block-title {
-	height: 30px;
+	height: 33px;
 	border-bottom: 1px solid $light-gray;
 }
 
 .registration-form_agenda {
-	padding: 5px 0 0 40px;
+	padding: 3px 0 0 37px;
 	text-align: left;
 }
 
@@ -40,7 +40,7 @@ li.registration-form {
 	position: relative;
 	float: left;
 	width: 107px;
-	margin: 20px 50px 0 0;
+	margin: 20px 57px 0 0;
 	font-size: 12px;
 
 	&:before {
@@ -55,7 +55,7 @@ li.registration-form {
 		color: $green;
 		position: absolute;
 		top: -8px;
-		left: -40px;
+		left: -38px;
 	}
 }
 
@@ -88,13 +88,14 @@ li.registration-form {
 
 .timedesk {
 	float: left;
-	margin: 0 20px 0 0;
-	width: 58px;
+	margin: 0 17px 0 2px;
+	width: 68px;
 	text-align: center;
 
 	li.doctor-time {
 		margin: 0 0 15px;
-		padding: 5px 0;
+		width: 68px;
+		padding: 4px 0;
 		cursor: pointer;
 
 		&:hover {

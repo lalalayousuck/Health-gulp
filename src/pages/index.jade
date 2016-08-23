@@ -42,35 +42,72 @@ html
                 a(href="#") По направлению
               li
                 a(href="#") Мои записи
-          
-            ul.input-group
-              li
-                .dropdown
-                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region Район города
-                  ul.dropdown-menu.main
-                    li.btn-lg
-                      a(href="#") Калининский район
-                    li.btn-lg
-                      a(href="#") Петроградский район
-                    li.btn-lg
-                      a(href="#") Выборгский район
-                    li.btn-lg
-                      a(href="#") Невский район 
-              li
-                .dropdown
-                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
-                  ul.dropdown-menu.main
-                    li.btn-lg
-                      a(href="#") Калининский район
-                    li.btn-lg
-                      a(href="#") Петроградский район
-                    li.btn-lg
-                      a(href="#") Выборгский район
-                    li.btn-lg
-                      a(href="#") Невский район 
+            
+            .input-groups
+              ul.input-group.input-group1.is-active
+                li
+                  .dropdown
+                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region Район города
+                    ul.dropdown-menu.main.is-hidden
+                      li.btn-lg
+                        a(href="#") Калининский район
+                      li.btn-lg
+                        a(href="#") Петроградский район
+                      li.btn-lg
+                        a(href="#") Выборгский район
+                      li.btn-lg
+                        a(href="#") Невский район 
+                li
+                  .dropdown
+                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
+                    ul.dropdown-menu.main.is-hidden
+                      li.btn-lg
+                        a(href="#") Калининский район
+                      li.btn-lg
+                        a(href="#") Петроградский район
+                      li.btn-lg
+                        a(href="#") Выборгский район
+                      li.btn-lg
+                        a(href="#") Невский район 
 
-              li.to-right
-                button.btn.btn-success.btn-primary.btn-lg Перейти к записи
+                li.to-right
+                  button.btn.btn-success.btn-primary.btn-lg Перейти к записи
+
+              ul.input-group.input-group2
+                li
+                  .little-text
+                    | Номер указан над штрих-кодом направления.
+                    br
+                    | Пробелы и дефисы не имеют значения.
+                    br
+                    | Заполняется на кириллице.
+                li
+                  input.main.doctor-ticket(placeholder="АБ-0000-ВГ")
+
+                li.to-right
+                  button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+
+              ul.input-group.input-group3
+                li
+                  .dropdown
+                    button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Дмитрий Иванов
+                li
+                  .dropdown
+                    button.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right 01 сен 1990
+                    ul.dropdown-menu.dropdown-menu__datepicker.is-hidden
+                      li
+                        #datepicker
+                      li
+                        button.btn.btn-success.btn-primary Выбрать
+                li
+                  .dropdown
+                    button.btn.btn-lg.dropdown-toggle.dropdown__region.btn-left Курортрный
+                li
+                  .dropdown
+                    button.btn.btn-lg.dropdown-toggle.dropdown__specialist.btn-right Терапевт
+
+                li.to-right
+                  button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
 
           
           .features.home-features
@@ -490,5 +527,6 @@ html
           .footer-underline
           a.footer-studio(href="http://oniverse.co/") Дизайн от ONIVERSE
           .footer-phone Все права защищены. 2016
-
-    script(src='/assets/main.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
+    script(src='../assets/script.js')

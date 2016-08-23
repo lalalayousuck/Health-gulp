@@ -18,8 +18,14 @@
 	text-align: center;
 	font-size: 15px;
 	border-radius: $border-radius $border-radius 0 0;
+	cursor: pointer;
 }
 
 .menu-tab.disabled {
 	background-color: #c8d9dc;
+
+	&:hover {
+		cursor: default;
+		content: "Скоро";
+	}
 }

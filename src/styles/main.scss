@@ -43,6 +43,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+.hero {
+	position: relative;
+}
+
 .hero-home {
 	height: 785px;
 	background-image: url("../assets/home-bg-pic.jpg");
@@ -53,3 +57,7 @@ body {
 	background-color: $btn-hover;
 	padding-bottom: 38px;
 }
+
+// ::-webkit-scrollbar { /* for Mac OS X support */
+//     width: 0;
+// }

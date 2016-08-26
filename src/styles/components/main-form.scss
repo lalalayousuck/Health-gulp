@@ -9,3 +9,21 @@
 .main-form > .nav-tabs {
 	width: 1120px;
 }
+
+.input-extra {
+	border-color: $ginger;
+}
+
+.extra-alert {
+	margin: 4px 0 0;
+	padding: 9px 10px;
+	z-index: +5;
+	background-color: $ginger;
+	color: white;
+	border-radius: $border-radius;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: left;
+	width: 300px;
+	height: 60px;
+}

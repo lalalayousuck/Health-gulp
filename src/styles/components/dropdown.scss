@@ -9,15 +9,13 @@
     font-size: 14px;
     text-align: left;
 
-    &:before {
-      position: absolute;
-      top: 15px;
-      left: 19px;
+    &:focus {
+      border: 1px solid $semidark-gray;
     }
 
+    &:before,
     &:after {
       position: absolute;
-      right: 15px;
     }
   }
 
@@ -49,6 +47,7 @@
   .main-dropdown__list:after {
     @include icon(ico_arrow_down_s);
     top: 24px;
+    right: 18px;
   }
 
   .main-dropdown__list:before {
@@ -62,18 +61,30 @@
   .main-dropdown__region:after {
     @include icon(check-in);
     top: 12px;
+    right: 18px;
   }
+}
+
+.dropdown-alert {
+  height: 45px;
+  line-height: 45px;
 }
 
 .dropdown-menu {
   position: absolute;
   top: 50px;
+  max-height: 200px;
   z-index: 2;
   border: 1px solid $semidark-gray;
   border-radius: $border-radius;
   background-color: $white;
-
+  opacity: 1;
+  visibility: visible;
+  transition: opasity 0.5s;
+  overflow: hidden;
+  
   li {
+    position: relative;
     width: 100%;
     padding: 15px 15px;
     color: black;
@@ -95,7 +106,8 @@
 }
 
 .dropdown-menu.is-hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .dropdown__client {
@@ -108,6 +120,7 @@
   &:after {
     @include icon(ico_date);
     top: 15px;
+    right: 18px;
   }
 }
 
@@ -123,8 +136,28 @@
 .dropdown__client:after {
   @include icon(ico_arrow_down_s);
   top: 21px;
+  right: 18px;
 }
 
 .dropdown-menu__datepicker {
   width: 300px;
+}
+
+.input-groups__doctors {
+  & .doctor-ticket {
+    margin: 0;
+    width: 366px;
+  }
+
+  .input-group2 {
+    li:last-child {
+      margin-left: 18px;
+      padding-top: 9px;
+    }
+  }
+}
+
+.doctor-ticket_adress {
+  font-size: 14px;
+  font-weight: 600;
 }

@@ -12,7 +12,7 @@ html
           .header
             ul
               li
-                .header_brand
+                a.header_brand(href="localhost:8080")
                 .header_city
                   .header_city-logo
                   a.link-dashed.header_city-name(href="#") Санкт-Петербург
@@ -47,8 +47,10 @@ html
               ul.input-group.input-group1.is-active
                 li
                   .dropdown
-                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region Район города
+                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region.need-more Район города
+                      //- .dropdown-alert.main.dropdown-menu Совпадение. Пожалуйста, сообщите ваше отчество:
                     ul.dropdown-menu.main.is-hidden
+                      .my-scroller
                       li.btn-lg
                         a(href="#") Калининский район
                       li.btn-lg
@@ -56,7 +58,18 @@ html
                       li.btn-lg
                         a(href="#") Выборгский район
                       li.btn-lg
-                        a(href="#") Невский район 
+                        a(href="#") Невский район
+                      li.btn-lg
+                        a(href="#") Невский район
+                      li.btn-lg
+                        a(href="#") Невский район
+                      li.btn-lg
+                        a(href="#") Невский район
+                      li.btn-lg
+                        a(href="#") Невский район
+                      li.btn-lg
+                        a(href="#") Невский район
+                    
                 li
                   .dropdown
                     button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
@@ -71,7 +84,8 @@ html
                         a(href="#") Невский район 
 
                 li.to-right
-                  button.btn.btn-success.btn-primary.btn-lg Перейти к записи
+                  a(href="/doctors.html")
+                    button.btn.btn-success.btn-primary.btn-lg Перейти к записи
 
               ul.input-group.input-group2
                 li
@@ -85,7 +99,8 @@ html
                   input.main.doctor-ticket(placeholder="АБ-0000-ВГ")
 
                 li.to-right
-                  button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+                  a(href="/doctors.html")
+                    button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
 
               ul.input-group.input-group3
                 li
@@ -101,13 +116,26 @@ html
                         button.btn.btn-success.btn-primary Выбрать
                 li
                   .dropdown
-                    button.btn.btn-lg.dropdown-toggle.dropdown__region.btn-left Курортрный
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.dropdown__specialist.btn-right Терапевт
+                    button.btn.btn-lg.dropdown-toggle.dropdown__region.main Курортрный
+                    ul.dropdown-menu.main.is-hidden
+                      li.btn-lg
+                        a(href="#") Калининский район
+                      li.btn-lg
+                        a(href="#") Петроградский район
+                      li.btn-lg
+                        a(href="#") Выборгский район
+                      li.btn-lg
+                        a(href="#") Невский район 
 
                 li.to-right
-                  button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+                  a(href="/doctors.html")
+                    button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+                li
+                  input.input-extra.doctor-choose.client-thirdname(placeholder="Отчество" type="text")
+                  .extra-alert.doctor-choose Совпадение. Пожалуйста, сообщите ваше отчество:
+                li
+                  input.input-extra.doctor-choose.client-pasport(placeholder="Серия и номер паспорта" type="text")
+                  .extra-alert.doctor-choose Снова совпадение. Введите данные паспорта без пробелов.
 
           
           .features.home-features
@@ -529,4 +557,5 @@ html
           .footer-phone Все права защищены. 2016
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
+    script(src='../assets/baron.min.js')
     script(src='../assets/script.js')

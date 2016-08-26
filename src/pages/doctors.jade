@@ -11,7 +11,7 @@ html
         .container
           ul
             li
-              .header_brand
+              a.header_brand(href="localhost:8080")
               .header_city
                 .header_city-logo
                 a.link-dashed.header_city-name(href="#") Санкт-Петербург
@@ -22,7 +22,7 @@ html
             li
               .header_info-text 24ч  Запись, помощь, справка:
               .header_phone +7 (812) 426-17-27
-      .hero.hero-form
+      .hero-form
         .container
           ul.nav-tabs
             li.is-active
@@ -31,15 +31,19 @@ html
                 .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
             li
               a(href="#") По направлению
+              .tooltip
+                .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
             li
               a(href="#") Мои записи
+              .tooltip
+                .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
             
-          .input-groups
-            ul.input-group
+          .input-groups.input-groups__doctors
+            ul.input-group.input-group1.is-active
                 li
                   .dropdown
                     button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__region Район города
-                    ul.dropdown-menu.main.is-hidden
+                    ul.dropdown-menu.doctor-choose.is-hidden
                       li.btn-lg
                         a(href="#") Калининский район
                       li.btn-lg
@@ -47,11 +51,12 @@ html
                       li.btn-lg
                         a(href="#") Выборгский район
                       li.btn-lg
-                        a(href="#") Невский район 
+                        a(href="#") Невский район
+
                 li
                   .dropdown
                     button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__list Поликлиника
-                    ul.dropdown-menu.main.is-hidden
+                    ul.dropdown-menu.doctor-choose.is-hidden
                       li.btn-lg
                         a(href="#") Калининский район
                       li.btn-lg
@@ -64,19 +69,15 @@ html
                 li.to-right
                   button.btn.btn-primary.btn-lg Искать
 
+
             ul.input-group.input-group2
               li
-                .little-text
-                  | Номер указан над штрих-кодом направления.
-                  br
-                  | Пробелы и дефисы не имеют значения.
-                  br
-                  | Заполняется на кириллице.
-              li
-                input.main.doctor-ticket(placeholder="АБ-0000-ВГ")
+                input.doctor-ticket(placeholder="АБ-0000-ВГ")
 
-              li.to-right
-                button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+              li
+                .little-text Ваше направление в:
+                .doctor-ticket_adress Санкт-Петербург, Городская Поликлиника № 22, ул. Ленина, 21
+
 
             ul.input-group.input-group3
               li
@@ -92,15 +93,13 @@ html
                       button.btn.btn-success.btn-primary Выбрать
               li
                 .dropdown
-                  button.btn.btn-lg.dropdown-toggle.dropdown__region.btn-left Курортрный
-              li
-                .dropdown
-                  button.btn.btn-lg.dropdown-toggle.dropdown__specialist.btn-right Терапевт
+                  button.btn.btn-lg.dropdown-toggle.dropdown__region.main Курортрный
 
               li.to-right
-                button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+                button.btn.btn-primary.btn-lg.to-right Выбрать время
 
-      .hero
+    .hero
+      .doctor-choose_result1
         .container
           ul.menu-list
             li
@@ -190,79 +189,183 @@ html
                       .doctor-tickets 14 талонов
                       .doctor-from_date с 12 июня 2016
                       .doctor-ticketsoff Нет талонов
-                    
-      .footer
+  
+      .doctor-choose_result2
         .container
-          .footer-brand
-          .footer-list
-            ul 
-              li 
-                p О проекте
-              li 
-                a(href="#") О проекте
-              li 
-                a(href="#") Команда
-            ul
-              li
-                p Пользователи
-              li
-                a(href="#") Как это работает?
-              li
-                a(href="#") Правовая информация
-              li
-                a(href="#") Вопрос - Ответ
+          ul.menu-list
+            li
+              h5 Специализация врача
+            li.is-active 
+              a Терапевт
+            
+          ul.doctors-item-list
+            li
+              h5 Выберите дату и время
+            li
+              ul.doctor-item-list.col.col-md8
+                li
+                  ul.doctor-item
+                    li.to-left.doctor-pic
+                    li.to-left
+                      .doctor-name Кирилл Никитин
+                      .doctor-specialist Терапевт
+                      .doctor-status Врач высшей категории
+                    li.to-right
+                      button.btn.btn-primary выбрать время
+                    li.to-right
+                      .doctor-time 15:00
+                    li.to-right
+                      .doctor-tickets 14 талонов
+                      .doctor-from_date 12 июня 2016
+                      .doctor-ticketsoff нет талонов
 
-            ul
-              li
-                p Контакты
-              li
-                a(href="#") Обратная связь
-              li
-                a(href="#") Адреса и телефоны
-              li
-                a(href="#") ВКонтакте
-              li
-                a(href="#") Facebook
-              li
-                a(href="#") Одноклассники
+                li.registration-form
+                  .registration-form_block.registration-form_block-date
+                    .registration-form_block-title Доступные дни приёма
 
-            ul
-              li.phone
-                .little-text Телефон в Санкт-Петербурге:
-                h2 +7 (812) 426-17-27
-              li.phone
-                .little-text Телефон по России:
-                h2 8 800 426-17-27
-              li.phone
-                .little-text Телефон скорой помощи:
-                h2 03 или 103 (моб.)
+                    #datepicker
+
+                    .registration-form_agenda
+                      .agenda-block.agenda-block__picked Выбранный день
+                      .agenda-block.agenda-block__availible Дни Приёма
+                      .agenda-block.agenda-block__weekend Нерабочие дни
+                      .agenda-block.agenda-block__today Сегодня
+
+                  .registration-form_block.registration-form_block-time
+                    .registration-form_block-title Доступное время приёма
+                    .registration-form_timedesk
+                      ul.timedesk
+                        li.doctor-time.timedesk_item-picked 14:00
+                        li.doctor-time 15:00
+                        li.doctor-time 16:00
+                        li.doctor-time 17:00
+                        li.doctor-time.timedesk_item-disabled 18:00
+                      ul.timedesk
+                        li.doctor-time 20:00
+                        li.doctor-time 21:00
+                    .registration-form_final
+                      .little-text Выбрано
+                      .registration-form_final-item.registration-form_final-time 14:00,
+                      .registration-form_final-item.registration-form_final-date 12 июн 2016
+                      button.btn.btn-md.btn-success.btn-primary Подтвердить
+    
+      .doctor-choose_result3
+        .container
+          ul.menu-list
+            li
+              h5 Выберите тип
+            li.is-active 
+              a Мои записи
+            li 
+              a Мои направления
+
+          ul.doctors-item-list
+            li
+              h5 Вы записаны к:
+            li
+              ul.doctor-item-list.col.col-md8
+                li
+                  ul.doctor-item
+                    li.to-left.doctor-pic
+                    li.to-left
+                      .doctor-name Кирилл Никитин
+                      .doctor-specialist Терапевт
+                      .doctor-status Врач высшей категории
+                    li.to-right
+                      button.btn.btn-primary отменить
+                    li.to-right
+                      .doctor-time 15:00
+                    li.to-right
+                      .doctor-tickets 14 талонов
+                      .doctor-from_date 12 июня 2016
+                      .doctor-ticketsoff нет талонов
+
+                li
+                  ul.doctor-item
+                    li.to-left.doctor-pic
+                    li.to-left
+                      .doctor-name Кирилл Никитин
+                      .doctor-specialist Терапевт
+                      .doctor-status Врач высшей категории
+                    li.to-right
+                      button.btn.btn-primary отменить
+                    li.to-right
+                      .doctor-time 15:00
+                    li.to-right
+                      .doctor-tickets 14 талонов
+                      .doctor-from_date с 12 июня 2016
+                      .doctor-ticketsoff Нет талонов
 
 
-            ul
-              li
-                p Пресс-центр
-              li
-                a(href="#") СМИ о нас
+    .footer
+      .container
+        .footer-brand
+        .footer-list
+          ul 
+            li 
+              p О проекте
+            li 
+              a(href="#") О проекте
+            li 
+              a(href="#") Команда
+          ul
+            li
+              p Пользователи
+            li
+              a(href="#") Как это работает?
+            li
+              a(href="#") Правовая информация
+            li
+              a(href="#") Вопрос - Ответ
 
-            ul
-              li
-                p Медучреждения
-              li
-                a(href="#") Стать партнером
-              li
-                a(href="#") Правовая информация
+          ul
+            li
+              p Контакты
+            li
+              a(href="#") Обратная связь
+            li
+              a(href="#") Адреса и телефоны
+            li
+              a(href="#") ВКонтакте
+            li
+              a(href="#") Facebook
+            li
+              a(href="#") Одноклассники
+
+          ul
+            li.phone
+              .little-text Телефон в Санкт-Петербурге:
+              h2 +7 (812) 426-17-27
+            li.phone
+              .little-text Телефон по России:
+              h2 8 800 426-17-27
+            li.phone
+              .little-text Телефон скорой помощи:
+              h2 03 или 103 (моб.)
+
+
+          ul
+            li
+              p Пресс-центр
+            li
+              a(href="#") СМИ о нас
+
+          ul
+            li
+              p Медучреждения
+            li
+              a(href="#") Стать партнером
+            li
+              a(href="#") Правовая информация
 
 
 
 
-          .footer-underline
-          a.footer-studio(href="http://oniverse.co/") Дизайн от ONIVERSE
-          .footer-phone Все права защищены. 2016
+        .footer-underline
+        a.footer-studio(href="http://oniverse.co/") Дизайн от ONIVERSE
+        .footer-phone Все права защищены. 2016
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
-    script(src='assets/script.js')
-
-
-
-              
+    script(src='../assets/baron.min.js')
+    script(src='../assets/script.js')

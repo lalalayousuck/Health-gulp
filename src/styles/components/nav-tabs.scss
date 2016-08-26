@@ -28,6 +28,10 @@
   li.is-active {
     border-bottom: 2px solid $blue;
 
+    .tooltip {
+      display: block;
+    }
+
     a {
       color: black;
     }
@@ -37,6 +41,7 @@
 .tooltip {
   @include icon(ico_helper);
   position: absolute;
+  display: none;
   top: 0;
   right: 5px;
   cursor: pointer;

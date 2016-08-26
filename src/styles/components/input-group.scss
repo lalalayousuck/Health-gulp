@@ -34,7 +34,8 @@
 	}
 }
 
-.input-group2 {
+
+.input-groups:not(.input-groups__doctors) .input-group2 {
 	.doctor-ticket {
 		margin: 0 0 0 40px;
 		width: 512px;

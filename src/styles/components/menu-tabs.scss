@@ -1,15 +1,9 @@
 .menu-tabs {
 	margin: 0;
-
-	&:after {
-		display: block;
-		content: "";
-		clear: both;
-	}
 }
 
 .menu-tab {
-	float: left;
+	display: inline-block;
 	margin: 0 2px 0 0;
 	width: 240px;
 	height: 56px;
@@ -25,7 +19,7 @@
 	background-color: #c8d9dc;
 
 	&:hover {
-		cursor: default;
+		cursor: wait;
 		content: "Скоро";
 	}
 }

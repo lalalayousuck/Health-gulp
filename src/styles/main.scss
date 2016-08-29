@@ -32,6 +32,7 @@
 @import 'components/popup-choose';
 @import 'components/registration-form';
 @import 'components/datepicker';
+@import 'components/baronscroll';
 
 body {
 	position: relative;
@@ -48,16 +49,12 @@ body {
 }
 
 .hero-home {
-	height: 785px;
 	background-image: url("../assets/home-bg-pic.jpg");
-	background-size: 100% 100%;
+	background-position-x: center;
+	padding-bottom: 15px;
 }
 
 .hero-form {
 	background-color: $btn-hover;
 	padding-bottom: 38px;
 }
-
-// ::-webkit-scrollbar { /* for Mac OS X support */
-//     width: 0;
-// }

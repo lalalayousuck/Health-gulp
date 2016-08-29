@@ -25,102 +25,72 @@ html
       .hero-form
         .container
           ul.nav-tabs
-            li.is-active
-              a(href="#") Запись и расписание
+            li.is-active Запись и расписание
               .tooltip
                 .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
-            li
-              a(href="#") По направлению
+            li По направлению
               .tooltip
                 .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
-            li
-              a(href="#") Мои записи
+            li Мои записи
               .tooltip
                 .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
             
-          .input-groups.input-groups__doctors
+          
+    .hero-result.hero-result1.is-active
+      .hero-form
+        .container  
+          .input-groups
             ul.input-group.input-group1.is-active
                 li
                   .dropdown
                     button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__region Район города
                     ul.dropdown-menu.doctor-choose.is-hidden
-                      li.btn-lg
-                        a(href="#") Калининский район
-                      li.btn-lg
-                        a(href="#") Петроградский район
-                      li.btn-lg
-                        a(href="#") Выборгский район
-                      li.btn-lg
-                        a(href="#") Невский район
+                      li.btn-lg Калининский район
+                      li.btn-lg Петроградский район
+                      li.btn-lg Выборгский район
+                      li.btn-lg Невский район 
+                      li.btn-lg Калининский район
+                      li.btn-lg Петроградский район
+                      li.btn-lg Выборгский район
+                      li.btn-lg Невский район 
+                      li.btn-lg Калининский район
+                      li.btn-lg Петроградский район
+                      li.btn-lg Выборгский район
+                      li.btn-lg Невский район 
 
                 li
                   .dropdown
                     button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__list Поликлиника
                     ul.dropdown-menu.doctor-choose.is-hidden
-                      li.btn-lg
-                        a(href="#") Калининский район
-                      li.btn-lg
-                        a(href="#") Петроградский район
-                      li.btn-lg
-                        a(href="#") Выборгский район
-                      li.btn-lg
-                        a(href="#") Невский район 
+                      li.btn-lg Калининский район
+                      li.btn-lg Петроградский район
+                      li.btn-lg Выборгский район
+                      li.btn-lg Невский район 
+                      li.btn-lg Калининский район
+                      li.btn-lg Петроградский район
+                      li.btn-lg Выборгский район
+                      li.btn-lg Невский район 
+                      li.btn-lg Калининский район
+                      li.btn-lg Петроградский район
+                      li.btn-lg Выборгский район
+                      li.btn-lg Невский район 
 
                 li.to-right
-                  button.btn.btn-primary.btn-lg Искать
-
-
-            ul.input-group.input-group2
-              li
-                input.doctor-ticket(placeholder="АБ-0000-ВГ")
-
-              li
-                .little-text Ваше направление в:
-                .doctor-ticket_adress Санкт-Петербург, Городская Поликлиника № 22, ул. Ленина, 21
-
-
-            ul.input-group.input-group3
-              li
-                .dropdown
-                  button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Дмитрий Иванов
-              li
-                .dropdown
-                  button.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right 01 сен 1990
-                  ul.dropdown-menu.dropdown-menu__datepicker.is-hidden
-                    li
-                      #datepicker
-                    li
-                      button.btn.btn-success.btn-primary Выбрать
-              li
-                .dropdown
-                  button.btn.btn-lg.dropdown-toggle.dropdown__region.main Курортрный
-
-              li.to-right
-                button.btn.btn-primary.btn-lg.to-right Выбрать время
-
-    .hero
-      .doctor-choose_result1
+                  button.btn.btn-primary.btn-lg.disabled Искать
+      .hero-doctor-choose
         .container
           ul.menu-list
             li
               h5 Укажите специализацию
-            li.is-active 
-              a Терапевт
-            li 
-              a Акушер-гинеколог
-            li 
-              a Педиатр
-            li 
-              a Хирург
-            li 
-              a Невролог
-            li 
-              a Офтальмолог
-            li 
-              a ЛОР
-            li 
-              a Стоматолог
-            li
+            li.menu-list_item.is-active Терапевт
+            li.menu-list_item Акушер-гинеколог
+            li.menu-list_item Педиатр
+            li.menu-list_item Хирург
+            li.menu-list_item Невролог
+            li.menu-list_item Офтальмолог
+            li.menu-list_item ЛОР
+            li.menu-list_item Стоматолог
+            li.more
               a.link-dashed показать больше
           ul.doctors-item-list
             li
@@ -147,7 +117,7 @@ html
                   .registration-form_block.registration-form_block-date
                     .registration-form_block-title Доступные дни приёма
 
-                    #datepicker
+                    .datepicker
 
                     .registration-form_agenda
                       .agenda-block.agenda-block__picked Выбранный день
@@ -189,15 +159,25 @@ html
                       .doctor-tickets 14 талонов
                       .doctor-from_date с 12 июня 2016
                       .doctor-ticketsoff Нет талонов
-  
-      .doctor-choose_result2
+
+    .hero-result.hero-result2
+      .hero-form
+        .container
+          ul.input-group.input-group2
+            li
+              input.doctor-ticket(placeholder="АБ-0000-ВГ")
+
+            li
+              .little-text Ваше направление в:
+              .doctor-ticket_adress Санкт-Петербург, Городская Поликлиника № 22, ул. Ленина, 21
+
+      .hero-doctor-choose
         .container
           ul.menu-list
             li
               h5 Специализация врача
-            li.is-active 
-              a Терапевт
-            
+            li.menu-list_item.is-active Терапевт
+
           ul.doctors-item-list
             li
               h5 Выберите дату и время
@@ -223,7 +203,7 @@ html
                   .registration-form_block.registration-form_block-date
                     .registration-form_block-title Доступные дни приёма
 
-                    #datepicker
+                    .datepicker
 
                     .registration-form_agenda
                       .agenda-block.agenda-block__picked Выбранный день
@@ -248,16 +228,35 @@ html
                       .registration-form_final-item.registration-form_final-time 14:00,
                       .registration-form_final-item.registration-form_final-date 12 июн 2016
                       button.btn.btn-md.btn-success.btn-primary Подтвердить
-    
-      .doctor-choose_result3
+
+    .hero-result.hero-result3
+      .hero-form
+        .container
+          ul.input-group.input-group3
+            li
+              .dropdown
+                button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Дмитрий Иванов
+            li
+              .dropdown
+                button.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right 01 сен 1990
+                ul.dropdown-menu.dropdown-menu__datepicker.is-hidden
+                  li
+                    .datepicker
+                  li
+                    button.btn.btn-success.btn-primary Выбрать
+            li
+              .dropdown
+                button.btn.btn-lg.dropdown-toggle.dropdown__region.main Курортрный
+
+            li.to-right
+              button.btn.btn-primary.btn-lg.to-right.disabled Выбрать время
+      .hero-doctor-choose
         .container
           ul.menu-list
             li
               h5 Выберите тип
-            li.is-active 
-              a Мои записи
-            li 
-              a Мои направления
+            li.menu-list_item.is-active Мои записи
+            li.menu-list_item Мои направления
 
           ul.doctors-item-list
             li

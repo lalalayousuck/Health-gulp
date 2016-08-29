@@ -2,6 +2,7 @@
 	float: left;
 	width: 400px;
 	padding-top: 6px;
+	font-size: 14px;
 
 	li {
 		position: relative;
@@ -16,18 +17,29 @@
 		}
 	}
 
-	li.is-active {
-		&:before {
-			@include icon(blue-list-bg-arrow);
-			position: absolute;
-			top: -8px;
-			left: -17px;
-			z-index: -1;
+	.menu-list_item {
+		cursor: pointer;
+		
+		&:hover {
+			opacity: 0.6;
 		}
 
-		a {
+		&.is-active {
 			color: $white;
-		}
+
+			&:hover {
+				opacity: 1;
+				cursor: default;
+			}
+			
+			&:before {
+				@include icon(blue-list-bg-arrow);
+				position: absolute;
+				top: -11px;
+				left: -17px;
+				z-index: -1;
+			}
+		}	
 	}
 }
 

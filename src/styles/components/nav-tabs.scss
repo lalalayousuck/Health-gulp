@@ -16,24 +16,22 @@
     width: 200px;
     font-weight: 600;
     padding-bottom: 8px;
-
-    a {
-      color: $font-disabled;
-      font-size: 16px;
-      letter-spacing: -1px;
-    }
+    color: $font-disabled;
+    font-size: 16px;
+    letter-spacing: -1px;
+    cursor: pointer;
   }
 
   li:hover,
   li.is-active {
     border-bottom: 2px solid $blue;
+  }
+
+  li.is-active {
+    color: black;
 
     .tooltip {
       display: block;
-    }
-
-    a {
-      color: black;
     }
   }
 }

@@ -127,11 +127,12 @@ li.doctor-time.timedesk_item-disabled {
 
 .registration-form_final {
 	position: relative;
+	padding-top: 3px;
 	text-align: left;
 
 	.btn {
 		position: absolute;
-		top: 3px;
+		top: 23px;
 		right: 0;
 	}
 }
@@ -141,7 +142,7 @@ li.doctor-time.timedesk_item-disabled {
 }
 
 .registration-form_final-time {
-	margin: 23px 8px 0 0;
+	margin: 18px 8px 0 0;
 	font-size: 14px;
 }
 

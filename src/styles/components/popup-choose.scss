@@ -1,21 +1,27 @@
 .popup-choose {
-	position: relative;
+	display: none;
+	position: fixed;
+	top: 100px;
 	margin: 0 auto;
+	z-index: 10;
 	width: 870px;
 	height: 665px;
 	padding: 10px 30px 40px 58px;
 	border-radius: $border-radius;
 	background-color: $bg-color;
 
+	&.is-active {
+		display: block;
+	}
+
 	.menu-list li {
 		text-transform: uppercase;
 	}
-
 }
 
 .choose-list {
 	float: left;
-	margin: 30px 0 0;
+	margin: 40px 0 0;
 	width: 435px;
 
 	li {
@@ -34,10 +40,21 @@
 		height: 65px;
 		margin: 0 0 10px;
 		padding: 15px;
+		cursor: pointer;
 
 		&:hover {
 			margin: -2px -2px 12px;
 			box-shadow: 3px 3px 1px 1px $light-gray;
+		}
+
+		&.is-picked {
+			background-color: $light-gray;
+			height: 63px;
+			cursor: default;
+
+			&:hover {
+				margin: 0 0 10px;
+			}
 		}
 	}
 }

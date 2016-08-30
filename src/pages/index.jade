@@ -48,8 +48,7 @@ html
               ul.input-group.input-group1.is-active
                 li
                   .dropdown
-                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region.need-more Район города
-                      //- .dropdown-alert.main.dropdown-menu Совпадение. Пожалуйста, сообщите ваше отчество:
+                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region.need-more Район городаe
                     ul.dropdown-menu.main.is-hidden
                       .my-scroller
                       li.btn-lg Калининский район
@@ -73,40 +72,48 @@ html
                       li.btn-lg Петроградский район
                       li.btn-lg Выборгский район
                       li.btn-lg Невский район 
+                  .extra-alert.main Вы не выбрали район.
                     
                 li
                   .dropdown
                     button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
-                    ul.dropdown-menu.main.is-hidden
-                      .my-scroller
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
+                  .extra-alert.main Вы не выбрали специалиста.
 
                 li.to-right
                   a(href="/doctors.html")
                     button.btn.btn-success.btn-primary.btn-lg Перейти к записи
+              .popup-background
+              .popup-choose
+                ul.menu-list.mini
+                  li
+                    h5 Выберите тип поликлиники
+                  li.menu-list_item.is-active Поликлиники
+                  li.menu-list_item Детские поликлиники
+                  li.menu-list_item Женские консультации
+                  li.menu-list_item Стоматологические
+                  li.menu-list_item Больницы
+                  li.menu-list_item Диспансеры
+
+                ul.choose-list
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                .exit
 
               ul.input-group.input-group2
                 li
@@ -126,10 +133,19 @@ html
               ul.input-group.input-group3
                 li
                   .dropdown
-                    input.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left(placeholder="Фамилия и Имя" type="text")
+                    button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Дмитрий Иванов
+                    ul.dropdown-menu.min
+                      li
+                        Фамилия
+                      li
+                        input(type="text" placeholder="Введите фамилию").min
+                      li
+                        Имя
+                      li
+                        input(type="text" placeholder="Введите имя").min
                 li
                   .dropdown
-                    button.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right 01 сен 1990
+                    input.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right(placeholder="01 сен 1990")
                     ul.dropdown-menu.dropdown-menu__datepicker.is-hidden
                       li
                         .datepicker
@@ -152,6 +168,7 @@ html
                       li.btn-lg Петроградский район
                       li.btn-lg Выборгский район
                       li.btn-lg Невский район 
+                  .extra-alert.main Вы не выбрали район.
 
                 li.to-right
                   a(href="/doctors.html")

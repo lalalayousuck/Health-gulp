@@ -12,11 +12,13 @@
 
 .input-extra {
 	border-color: $ginger;
+	display: none;
 }
 
 .extra-alert {
 	position: absolute;
-	margin: 4px 0 0;
+	display: none;
+	margin: 9px 0 0;
 	width: 300px;
 	height: 60px;
 	padding: 9px 10px;
@@ -27,4 +29,21 @@
 	font-size: 13px;
 	line-height: 20px;
 	text-align: left;
+	transition: all 1s;
+
+	&:before {
+		@include triangle(b, $ginger, 7px, 7px);
+		position: absolute;
+		top: -14px;
+		right: 25px;
+		content: "";
+	}
+}
+
+.not-filled {
+	border-color: $ginger;
+
+	& + .extra-alert {
+		display: block;
+	}
 }

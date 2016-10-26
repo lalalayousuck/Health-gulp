@@ -1,60 +1,77 @@
 .popup-choose {
-	display: none;
-	position: fixed;
-	top: 100px;
-	margin: 0 auto;
-	z-index: 10;
-	width: 870px;
-	height: 665px;
-	padding: 10px 30px 40px 58px;
-	border-radius: $border-radius;
-	background-color: $bg-color;
+  display: none;
+  position: fixed;
+  top: 100px;
+  margin: 0 auto;
+  z-index: 10;
+  width: 870px;
+  max-height: 900px;
+  padding: 10px 30px 40px 58px;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  overflow: scroll;
 
-	&.is-active {
-		display: block;
-	}
+  &.is-active {
+    display: block;
+  }
 
-	.menu-list li {
-		text-transform: uppercase;
-	}
+  .menu-list li {
+    text-transform: uppercase;
+  }
 }
 
 .choose-list {
-	float: left;
-	margin: 40px 0 0;
-	width: 435px;
+  position: relative;
+  float: left;
+  margin: 69px 0 0;
+  width: 435px;
+  max-height: 500px;
+  overflow-y: scroll; 
 
-	li {
-		text-align: left;
+  li {
+    text-align: left;
 
-		.bold {
-			margin: 0;
-		}
+    .bold {
+      margin: 0;
+    }
 
-		p {
-			margin: 7px 0 0;
-		}
-	}
+    p {
+      margin: 7px 0 0;
+    }
+  }
 
-	li.col {
-		height: 65px;
-		margin: 0 0 10px;
-		padding: 15px;
-		cursor: pointer;
+  li.col {
+    margin: 0 0 10px;
+    padding: 15px;
+    cursor: pointer;
 
-		&:hover {
-			margin: -2px -2px 12px;
-			box-shadow: 3px 3px 1px 1px $light-gray;
-		}
+    &.is-picked {
+      background-color: $light-gray;
+      height: 63px;
+      cursor: default;
 
-		&.is-picked {
-			background-color: $light-gray;
-			height: 63px;
-			cursor: default;
+      &:hover {
+        margin: 0 0 10px;
+      }
+    }
+  }
+}
 
-			&:hover {
-				margin: 0 0 10px;
-			}
-		}
-	}
+.popup-choose_extra {
+  position: absolute;
+  bottom: 40px;
+  width: 200px;
+
+  .little-text {
+    margin-top: 0;
+    color: $semidark-gray;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
+
+.popup-choose_extra-title {
+  color: $semidark-gray;
 }

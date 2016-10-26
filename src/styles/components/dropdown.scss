@@ -1,13 +1,12 @@
 .dropdown {
   position: relative;
-  padding-top: 2px;
 
   .dropdown-toggle {
     position: relative;
     padding-left: 15px;
     background-color: $white;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
 
     &:focus {
@@ -82,7 +81,7 @@
 .dropdown-menu {
   position: absolute;
   top: 50px;
-  max-height: 500px;
+  max-height: 400px;
   z-index: 3;
   border: 1px solid $semidark-gray;
   border-radius: $border-radius;
@@ -90,7 +89,7 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.4s;
-  overflow: hidden;
+  overflow-y: hidden;
   
   li {
     position: relative;
@@ -127,6 +126,19 @@
 
 .dropdown__client {
   width: 260px;
+
+  + .dropdown-menu {
+    padding: 0 20px 20px;
+
+    input {
+      width: 100%;
+      height: 35px;
+    }
+
+    button {
+      margin: 10px auto;
+    }
+  }
 }
 
 .dropdown__datepicker {
@@ -155,10 +167,18 @@
 }
 
 .dropdown-menu__datepicker {
-  width: 300px;
+  width: 371px;
+  text-align: center;
+  padding: 0 30px;
 }
 
 .doctor-ticket_adress {
+  margin-top: 5px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.dropdown__client-text {
+  font-size: 14px;
+  margin: 20px 0 3px;
 }

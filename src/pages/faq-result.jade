@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="assets/main.css")
+  body
+    
+    .hero
+      .header
+        .container
+          ul
+            li
+              a.header_brand(href="localhost:8080")
+              .header_city
+                .header_city-logo
+                a.link-dashed.header_city-name(href="#") Санкт-Петербург
+            li.header_btn
+              a(href="#") Медучреждения
+            li.header_btn
+              a(href="#") Врачи
+            li
+              .header_info-text 24ч  Запись, помощь, справка:
+              .header_phone +7 (812) 426-17-27
+      .hero-form.hero-form_faq
+        .container
+          ul.nav-tabs.faq-nav-tabs
+            li.is-active Помощь
+            li Команда
+            li Пресса о нас
+            li Миссия
+
+      .hero-faq-list
+        .container
+          ul.menu-list
+            li.menu-list_item.is-active C чего начать?
+            li.menu-list_item Ошибки и проблемы
+            li.menu-list_item Прикрепление к поликлинике
+            li.menu-list_item Личный кабинет
+            li.menu-list_item СМС-оповещение
+            li.menu-list_item Полис ОМС
+            li.menu-list_item Запись к врачу
+            li.menu-list_item Врачи
+            li.menu-list_item Отмена/перенос записи
+            li.menu-list_item Мобильное приложение
+            li.menu-list_item Куда обращаться
+
+          ul.faq-result.col.col-md8
+            li.faq-result_title Запись к врачу
+            li
+              #accordion
+                h3
+                  a(href="#") Что делать, если нужно записаться на приём к врачу?
+                div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+                h3
+                  a(href="#") В какую поликлинику обращаться?
+                div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+                h3
+                  a(href="#") Как записаться?
+                div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+                h3
+                  a(href="#") Можно ли попасть к узному специаоисту в поликлинике "в обход" терапевта?
+                div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке. Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке. Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке. Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+                h3
+                  a(href="#") Что делать, если нужно записаться на приём к врачу?
+                div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+            
+
+
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js')
+    script(src='../assets/script.js')

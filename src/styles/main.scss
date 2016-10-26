@@ -33,6 +33,8 @@
 @import 'components/registration-form';
 @import 'components/datepicker';
 @import 'components/baronscroll';
+@import 'components/select2';
+@import 'components/faq-page';
 
 body {
 	position: relative;
@@ -57,4 +59,8 @@ body {
 .hero-form {
 	background-color: $btn-hover;
 	padding-bottom: 38px;
+}
+
+.hero-form1 {
+	padding-bottom: 25px;
 }

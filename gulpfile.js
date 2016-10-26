@@ -135,7 +135,7 @@ gulp.task('productionCSS', function() {
   gulp.src('./build/**/*.css')
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
-      cascade: false
+      cascade: true
     }))
     .pipe(csso())
     .pipe(gulp.dest('./build/'))

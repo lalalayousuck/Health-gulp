@@ -10,13 +10,15 @@
 	background-color: $bg-color;
 	padding: 20px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 18px;
+	font-weight: 600;
 	border-radius: $border-radius $border-radius 0 0;
 	cursor: pointer;
 }
 
 .menu-tab.disabled {
 	background-color: #c8d9dc;
+	font-weight: 400;
 
 	&:hover {
 		cursor: wait;

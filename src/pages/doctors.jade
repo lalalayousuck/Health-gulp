@@ -22,7 +22,7 @@ html
             li
               .header_info-text 24ч  Запись, помощь, справка:
               .header_phone +7 (812) 426-17-27
-      .hero-form
+      .hero-form.hero-form1
         .container
           ul.nav-tabs
             li.is-active Запись и расписание
@@ -39,32 +39,32 @@ html
     .hero-result.hero-result1.is-active
       .hero-form
         .container  
-          .input-groups
-            ul.input-group.input-group1.is-active
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__region Район города
-                    ul.dropdown-menu.doctor-choose.is-hidden
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                    .extra-alert.doctor-choose Вы не выбрали район.
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__list Поликлиника
-                    .extra-alert.doctor-choose Вы не выбрали поликлинику.
-
-                li.to-right
-                  button.btn.btn-primary.btn-lg.disabled Искать
+          .input-group.input-group1.is-active
+            .input-group_item.doctor-choose
+              select(placeholder="Выберите район")
+                  option Калининский район
+                  option Петроградский район
+                  option Выборгский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Калининский район
+                  option Петроградский район
+                  option Выборгский район
+                  option Невский район 
+                  option Калининский район
+                  option Петроградский район
+                .extra-alert.doctor-choose Вы не выбрали специалиста.
+            .input-group_item
+              .dropdown
+                button.btn.btn-lg.dropdown-toggle.doctor-choose.main-dropdown__list Поликлиника
+              .extra-alert.main Вы не выбрали специалиста.
+            .input-group_item.right
+              a(href="/doctors.html")
+                  button.btn.btn-primary.btn-lg Перейти к записи
             .popup-background
             .popup-choose
               ul.menu-list.mini
@@ -97,6 +97,11 @@ html
                   .bold Городская поликлиника №104
                   p ул. Сикейроса, д. 10
               .exit
+              .popup-choose_extra
+                .popup-choose_extra-title Внимание!
+                .little-text Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+                a Узнать свой участок
+              
       .hero-doctor-choose
         .container
           ul.menu-list
@@ -125,7 +130,7 @@ html
                       .doctor-specialist Терапевт
                       .doctor-status Врач высшей категории
                     li.to-right
-                      button.btn.btn-success.btn-primary выбрать время
+                      button.pick-time-btn.btn.btn-success.btn-primary выбрать время
                     li.to-right
                       .doctor-time 15:00
                     li.to-right
@@ -186,18 +191,23 @@ html
               .doctor-name Кирилл Никитин
               .doctor-specialist (Терапевт)
               p В 14:00, 12 июня 2016
+             
+
               input.popup_input__sname(type="text" placeholder="Коровин")
               .extra-alert.mid Вы не выбрали район.
+             
+
               input.popup_input__name(type="text" placeholder="Олег")
               .extra-alert.mid Вы не выбрали район.
-              .dropdown.popup-dropdown
-                input.popup_input__birthday(type="text" placeholder="01 сен 1996")
-                ul.dropdown-menu.dropdown-datepicker.is-hidden
-                  li
-                    .datepicker
-                  li
-                    button.btn.btn-success.btn-primary Выбрать
-                .extra-alert.mid Вы не выбрали район.
+             
+
+              .input-group_item
+                .dropdown
+                  input.btn.btn-lg.dropdown-toggle.dropdown__datepicker.mid(placeholder="01 сен 1990")
+                  .dropdown-menu.dropdown-menu__datepicker.is-hidden
+                    .dropdown-datepicker
+             
+
               input.popup_input__phone(type="text" placeholder="+7 921 123 45 67")
               .extra-alert.mid Вы не выбрали район.
               .little-text
@@ -211,11 +221,11 @@ html
     .hero-result.hero-result2
       .hero-form
         .container
-          ul.input-group.input-group2
-            li
-              input.doctor-ticket(placeholder="АБ-0000-ВГ")
+          .input-group.input-group2
+            .input-group_item
+              input.doctor-ticket.doctor-choose(placeholder="АБ-0000-ВГ")
 
-            li
+            .input-group_item
               .little-text Ваше направление в:
               .doctor-ticket_adress Санкт-Петербург, Городская Поликлиника № 22, ул. Ленина, 21
 
@@ -280,47 +290,50 @@ html
     .hero-result.hero-result3
       .hero-form
         .container
-          ul.input-group.input-group3
-            li
+          .input-group.input-group3
+            .input-group_item.half-input
               .dropdown
-                button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Дмитрий Иванов
-                ul.dropdown-menu.min
-                  li
-                    Фамилия
-                  li
-                    input(type="text" placeholder="Введите фамилию").min
-                  li
-                    Имя
-                  li
-                    input(type="text" placeholder="Введите имя").min
-            li
+                button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Ваше имя
+                .dropdown-menu.min
+                  .dropdown__client-text Фамилия
+                  input(type="text" placeholder="Введите фамилию")
+                  .dropdown__client-text Имя
+                  input(type="text" placeholder="Введите имя")
+            .input-group_item
               .dropdown
-                button.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right 01 сен 1990
-                ul.dropdown-menu.dropdown-menu__datepicker.is-hidden
-                  li
-                    .datepicker
-                  li
-                    button.btn.btn-success.btn-primary Выбрать
-            li
-              .dropdown
-                button.btn.btn-lg.dropdown-toggle.dropdown__region.main Курортрный
-                ul.dropdown-menu.doctor-choose.is-hidden
-                  li.btn-lg Калининский район
-                  li.btn-lg Петроградский район
-                  li.btn-lg Выборгский район
-                  li.btn-lg Невский район 
-                  li.btn-lg Калининский район
-                  li.btn-lg Петроградский район
-                  li.btn-lg Выборгский район
-                  li.btn-lg Невский район 
-                  li.btn-lg Калининский район
-                  li.btn-lg Петроградский район
-                  li.btn-lg Выборгский район
-                  li.btn-lg Невский район 
-                .extra-alert.doctor-choose Вы не выбрали район.
+                input.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right(placeholder="01 сен 1990")
+                .dropdown-menu.dropdown-menu__datepicker.is-hidden
+                  .dropdown-datepicker
 
-            li.to-right
-              button.btn.btn-primary.btn-lg.to-right.disabled Выбрать время
+            .input-group_item.main
+              select(placeholder="Выберите район")
+                option Калининский район
+                option Петроградский район
+                option Выборгский район
+                option Невский район
+                option Невский район
+                option Невский район
+                option Невский район
+                option Невский район
+                option Невский район
+                option Калининский район
+                option Петроградский район
+                option Выборгский район
+                option Невский район 
+                option Калининский район
+                option Петроградский район
+
+            .input-group_item.right
+                a(href="/doctors.html")
+                  button.btn.btn-primary.btn-lg.to-right Перейти к записи
+
+              .input-group_item
+                input.input-extra.doctor-choose.client-thirdname(placeholder="Отчество" type="text")
+                .extra-alert.doctor-choose Совпадение. Пожалуйста, сообщите ваше отчество:
+
+              .input-group_item
+                input.input-extra.doctor-choose.client-pasport(placeholder="Серия и номер паспорта" type="text")
+                .extra-alert.doctor-choose Снова совпадение. Введите данные паспорта без пробелов.
       .hero-doctor-choose
         .container
           ul.menu-list
@@ -437,5 +450,5 @@ html
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
-    script(src='../assets/baron.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js')
     script(src='../assets/script.js')

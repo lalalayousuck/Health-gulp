@@ -2,7 +2,7 @@
 	width: 100%;
 	text-align: center;
 	background-color: $bg-color;
-	padding: 25px 40px 25px;
+	padding: 25px 40px 38px;
 	border-radius: 0 $border-radius $border-radius $border-radius;
 }
 
@@ -11,8 +11,9 @@
 }
 
 .input-extra {
+	margin-top: 20px; 
 	border-color: $ginger;
-	display: none;
+
 }
 
 .extra-alert {

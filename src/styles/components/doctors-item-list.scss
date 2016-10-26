@@ -1,140 +1,136 @@
 .doctor-item-list.col {
-	padding: 0 25px;
+  padding: 0 25px;
 }
 
 .doctors-item-list {
-	float: left;
-	padding-top: 8px;
+  float: left;
+  padding-top: 8px;
 
-	> li:first-child {
-		margin: 30px 0 0;
-	}
+  > li:first-child {
+    margin: 30px 0 0 5px;
+  }
 
-	> li:last-child {
-		margin: -18px 0 0 -5px;
-
-		&:after {
-			display: block;
-			content: "";
-			clear: both;
-		}
-	}
+  > li:nth-child(2) {
+    margin-bottom: 50px;
+  }
 }
 
 .doctor-item-list {
-	> li {
-		padding-top: 15px;
-		height: 104px;
-		border-bottom: 1px solid $light-gray;
-	}
+  float: none;
 
-	> li:last-child {
-		border-bottom: 0;
-	}
+  > li {
+    padding-top: 15px;
+    height: 104px;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  > li:last-child {
+    border-bottom: 0;
+  }
 }
 
 .doctor-item-list.col {
-	margin: 35px 5px 0 5px;
+  margin: 9px 5px 0 5px;
 }
 
 .doctor-item {
-	> li {
-		position: relative;
-		padding-top: 18px;
-		border: 0;
-		
-		&:nth-child(2) {
-			text-align: left;
-		}
+  > li {
+    position: relative;
+    padding-top: 18px;
+    border: 0;
+    
+    &:nth-child(2) {
+      text-align: left;
+    }
 
-		&:nth-child(5) {
-			padding-top: 23px;
-		}
+    &:nth-child(5) {
+      padding-top: 23px;
+    }
 
-		&:nth-child(3) {
-			padding-top: 21px;
-		}
+    &:nth-child(3) {
+      padding-top: 21px;
+    }
 
-		&:nth-child(4) {
-			padding-top: 24px;
-			margin: 0 25px;
-		}
-	}
+    &:nth-child(4) {
+      padding-top: 24px;
+      margin: 0 25px;
+    }
+  }
 
-	> li.to-left {
-		float: left;
-	}
+  > li.to-left {
+    float: left;
+  }
 
-	> li.to-right {
-		float: right;
-	}
+  > li.to-right {
+    float: right;
+  }
 }
 
 .doctor-pic {
-	position: relative;
-	margin: 14px 13px 0 0;
-	width: 50px;
-	height: 50px;
-	background-image: url("../assets/doctor.jpg");
-	background-size: cover;
-	border-radius: 50%;
+  position: relative;
+  margin: 14px 13px 0 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../assets/doctor.jpg");
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .doctor-name {
-	font-size: 16px;
-	font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .doctor-specialist {
-	float: left;
-	margin-top: 5px;
-	font-size: 14px;
-	color: $dark-gray;
+  float: left;
+  margin-top: 5px;
+  font-size: 14px;
+  color: $dark-gray;
 }
 
 .doctor-status {
-	float: left;
-	margin: 6px 12px 0;
-	font-size: 12px;
-	color: $font-disabled;
+  float: left;
+  margin: 6px 12px 0;
+  font-size: 12px;
+  color: $font-disabled;
 }
 
 .doctor-tickets {
-	font-size: 12px;
-	color: $dark-green;
+  font-size: 12px;
+  color: $dark-green;
 }
 
 .doctor-from_date {
-	font-size: 12px;
-	color: $dark-gray;
+  font-size: 12px;
+  color: $dark-gray;
 }
 
 .doctor-time {
-	padding: 4px 14px;
-	border: 2px solid #a8d66b;
-	border-radius: 30px;
-	font-size: 14px;
+  padding: 4px 14px;
+  border: 2px solid #a8d66b;
+  border-radius: 30px;
+  font-size: 14px;
 }
 
 .doctor-ticketsoff {
-	display: none;
-	position: absolute;
-	top: 27px;
-	left: -45px;
-	width: 100px;
-	font-size: 14px;
-	color: $font-disabled;
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: -45px;
+  width: 100px;
+  font-size: 14px;
+  color: $font-disabled;
 }
 
 .doctor-item.ticketsoff {
-	.doctor-time, 
-	.doctor-tickets, 
-	.doctor-from_date, 
-	button {
-		display: none;
-	}
+  .doctor-time, 
+  .doctor-tickets, 
+  .doctor-from_date, 
+  button {
+    display: none;
+  }
 }
 
 .doctor-item.ticketsoff .doctor-ticketsoff {
-	display: block;
+  display: block;
 }

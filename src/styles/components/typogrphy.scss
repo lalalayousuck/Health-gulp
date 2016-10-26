@@ -1,80 +1,82 @@
 h1, h2, h4, h5, h6, p, .bold, .little-text {
-	margin: 20px 0 0;
+  margin: 20px 0 0;
 }
 
 h2, h3, h5, h6, p, .little-text {
-	font-weight: 200;
+  font-weight: 200;
 }
 
 h1 {
-	font-size: 44px;
+  font-size: 44px;
 }
 
 .large-centered-heading {
-	margin: 0;
-	padding: 63px 0;
-	text-align: center;
-	line-height: 1.2;
-	font-weight: 200;
-	color: $white;
-	letter-spacing: -2.2px;
+  margin: 0;
+  padding: 63px 0;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 200;
+  color: $white;
+  letter-spacing: -2.2px;
 }
 
 h2 {
-	font-size: 32px;
+  font-size: 32px;
 }
 
 h3 {
-	font-size: 25px;
+  font-size: 25px;
 }
 
 h4 {
-	font-size: 20px;
-	font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 h5 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 h6 {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 p {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .bold {
-	font-size: 14px;
-	font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .little-text {
-	font-size: 12px;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 a {
-	font-size: 14px;
-	color: $blue;
-	cursor: pointer;
+  font-size: 14px;
+  color: $blue;
+  cursor: pointer;
 
-	&:hover {
-		color: $dark-blue;
-	}
+  &:hover {
+    color: $dark-blue;
+    text-decoration: none;
+  }
 }
 
 li {
-	a {
-		color: $font-color;
-	}
+  a {
+    color: $font-color;
+  }
 }
 
 .link-dashed {
-	border-bottom: 1px dashed $blue;
-	color: $blue;
+  border-bottom: 1px dashed $blue;
+  color: $blue;
 
-	&:hover {
-		color: $light-blue;
-	}
+  &:hover {
+    color: $light-blue;
+  }
 }

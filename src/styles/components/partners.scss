@@ -1,18 +1,17 @@
 .partners {
-  
-  &:after {
+  a {
     display: block;
-    content: "";
-    clear: both;
+    margin-right: 90px;
   }
 }
 
 .partner {
   float: left;
-  margin: 40px 75px 50px 0;
+  margin: 40px 95px 50px 0;
 
   &:first-child {
-    margin: 70px 150px 0 0;
+    margin: 50px 150px 35px 0;
+    padding-top: 30px;
   }
 
   &:last-child {

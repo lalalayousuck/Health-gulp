@@ -1,6 +1,7 @@
 .container {
 	position: relative;
 	margin: 0 auto;
+	padding: 0;
 	width: 1200px;
 	
   &:after {
@@ -8,9 +9,4 @@
     content: "";
     clear: both;
   }
-}
-
-.container.white {
-	padding: 20px;
-	background-color: $white;
 }

@@ -1,108 +1,93 @@
-.input-groups {
-	position: relative;
-	margin: 26px 0 0;
-
-	.little-text {
-		margin: 0;
-		text-align: left;
-	}
-}
-
 .input-group {
-	width: 100%;
-	text-align: left;
-	vertical-align: middle;
+  position: relative;
+  margin: 26px 0 0;
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
 
-	&:after {
-		display: block;
-		clear: both;
-		content: "";
-	}
+  .input-group_item {
+    display: inline-block;
+    margin: 0 16px 0 0;
+    vertical-align: middle;
 
-	li {
-		display: inline-block;
-		line-height: 16px;
-		margin: 0 16px 0 0;
+    &.right {
+      position: absolute;
+      right: 0;
+      margin-top: -2px;
+      margin-right: 0; 
+    }
 
-		&:last-child {
-			margin-right: 0;
-		}
-	}
+    &.half-input {
+      margin-right: 0;
+    }
 
-	> li.to-right {
-		margin-right: 0;
-		float: right;
-	}
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .little-text {
+      line-height: 12px;
+      margin-top: 9px;
+    }
+  }
 }
 
 input.min {
-	width: 240px;
-}
-
-.input-groups:not(.input-groups__doctors) .input-group2 {
-	.doctor-ticket {
-		margin: 0 0 0 40px;
-		width: 512px;
-		
-	}
+  width: 240px;
 }
 
 .input-group3 {
-	> li {
-		&:first-child,
-		&:nth-child(3) {
-			margin-right: 0;
-		}
-	}
+  > li {
+    &:first-child,
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
 }
 
 .input-group1,
 .input-group2,
 .input-group3 {
-	display: none;
+  display: none;
 }
 
 .input-group.is-active {
-	display: block;
+  display: block;
 }
 
 .hero-result1,
 .hero-result2,
 .hero-result3 {
-	display: none;
+  display: none;
 
-	&.is-active {
-		display: block;
-	}
+  &.is-active {
+    display: block;
+  }
 }
 
 .doctor-ticket {
-	width: 500px;
+  width: 500px;
 }
 
 .hero-result {
-	.input-groups {
-		margin: 0;
-	}
+  .input-group {
+    position: relative;
+    margin-top: 0;
 
-	.input-group {
-		.doctor-ticket {
-			float: left;
-			width: 300px;
-			margin-top: 0;
-		}
+    &:before {
+      @include icon(plus);
+      position: absolute;
+      bottom: -100px;
+      left: -45px;
+    }
 
-		.little-text {
-			padding-top: 4px;
-			line-height: 2px;
-			margin-top: 0;
-		}
-	}
-}
+    .doctor-ticket {
+      width: 404px;
+    }
 
-.input-group {
-	.little-text {
-		line-height: 12px;
-		margin-top: 0;
-	}
+    .little-text {
+      padding-top: 4px;
+      margin-top: 0;
+    }
+  }
 }

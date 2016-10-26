@@ -44,43 +44,33 @@ html
                 .tooltip
                   .tooltip-text Всплывающий красивый текст Всплывающий красивый текст Всплывающий красивый текст
             
-            .input-groups
-              ul.input-group.input-group1.is-active
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__region.need-more Район городаe
-                    ul.dropdown-menu.main.is-hidden
-                      .my-scroller
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район
-                      li.btn-lg Невский район
-                      li.btn-lg Невский район
-                      li.btn-lg Невский район
-                      li.btn-lg Невский район
-                      li.btn-lg Невский район
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                  .extra-alert.main Вы не выбрали район.
-                    
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
-                  .extra-alert.main Вы не выбрали специалиста.
 
-                li.to-right
-                  a(href="/doctors.html")
+
+            .input-group.input-group1.is-active
+              .input-group_item.main
+                select(placeholder="Выберите район")
+                  option Калининский район
+                  option Петроградский район
+                  option Выборгский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Калининский район
+                  option Петроградский район
+                  option Выборгский район
+                  option Невский район 
+                  option Калининский район
+                  option Петроградский район
+                .extra-alert.doctor-choose Вы не выбрали специалиста.
+              .input-group_item
+                .dropdown
+                  button.btn.btn-lg.dropdown-toggle.main.main-dropdown__list Поликлиника
+                .extra-alert.main Вы не выбрали специалиста.
+              .input-group_item.right
+                a(href="/doctors.html")
                     button.btn.btn-success.btn-primary.btn-lg Перейти к записи
               .popup-background
               .popup-choose
@@ -113,73 +103,91 @@ html
                   li.col.col-md4 
                     .bold Городская поликлиника №104
                     p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
+                  li.col.col-md4 
+                    .bold Городская поликлиника №104
+                    p ул. Сикейроса, д. 10
                 .exit
+                .popup-choose_extra
+                  .popup-choose_extra-title Внимание!
+                  .little-text Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+                  a Узнать свой участок
 
-              ul.input-group.input-group2
-                li
-                  .little-text
-                    | Номер указан над штрих-кодом направления.
-                    br
-                    | Пробелы и дефисы не имеют значения.
-                    br
-                    | Заполняется на кириллице.
-                li
-                  input.main.doctor-ticket(placeholder="АБ-0000-ВГ")
+            .input-group.input-group2
+              .input-group_item
+                .little-text
+                  | Номер указан над штрих-кодом направления.
+                  br
+                  | Пробелы и дефисы не имеют значения.
+                  br
+                  | Заполняется на кириллице.
+              
+              .input-group_item
+                input.main.doctor-ticket(placeholder="АБ-0000-ВГ")
 
-                li.to-right
-                  a(href="/doctors.html")
-                    button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+              .input-group_item.right
+                a(href="/doctors.html")
+                  button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
 
-              ul.input-group.input-group3
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Дмитрий Иванов
-                    ul.dropdown-menu.min
-                      li
-                        Фамилия
-                      li
-                        input(type="text" placeholder="Введите фамилию").min
-                      li
-                        Имя
-                      li
-                        input(type="text" placeholder="Введите имя").min
-                li
-                  .dropdown
-                    input.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right(placeholder="01 сен 1990")
-                    ul.dropdown-menu.dropdown-menu__datepicker.is-hidden
-                      li
-                        .datepicker
-                      li
-                        button.btn.btn-success.btn-primary Выбрать
-                li
-                  .dropdown
-                    button.btn.btn-lg.dropdown-toggle.dropdown__region.main Курортрный
-                    ul.dropdown-menu.main.is-hidden
-                      .my-scroller
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                      li.btn-lg Калининский район
-                      li.btn-lg Петроградский район
-                      li.btn-lg Выборгский район
-                      li.btn-lg Невский район 
-                  .extra-alert.main Вы не выбрали район.
+            .input-group.input-group3
+              .input-group_item.half-input
+                .dropdown
+                  button.btn.btn-lg.dropdown-toggle.dropdown__client.btn-left Ваше имя
+                  .dropdown-menu.min
+                    .dropdown__client-text Фамилия
+                    input(type="text" placeholder="Введите фамилию")
+                    .dropdown__client-text Имя
+                    input(type="text" placeholder="Введите имя")
+              .input-group_item
+                .dropdown
+                  input.btn.btn-lg.dropdown-toggle.dropdown__datepicker.btn-right(placeholder="01 сен 1990")
+                  .dropdown-menu.dropdown-menu__datepicker.is-hidden
+                    .dropdown-datepicker
 
-                li.to-right
-                  a(href="/doctors.html")
-                    button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
-                li
-                  input.input-extra.doctor-choose.client-thirdname(placeholder="Отчество" type="text")
-                  .extra-alert.doctor-choose Совпадение. Пожалуйста, сообщите ваше отчество:
-                li
-                  input.input-extra.doctor-choose.client-pasport(placeholder="Серия и номер паспорта" type="text")
-                  .extra-alert.doctor-choose Снова совпадение. Введите данные паспорта без пробелов.
+              .input-group_item.main
+                select(placeholder="Выберите район")
+                  option Калининский район
+                  option Петроградский район
+                  option Выборгский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Невский район
+                  option Калининский район
+                  option Петроградский район
+                  option Выборгский район
+                  option Невский район 
+                  option Калининский район
+                  option Петроградский район
 
+              .input-group_item.right
+                a(href="/doctors.html")
+                  button.btn.btn-success.btn-primary.btn-lg.to-right Перейти к записи
+
+              .input-group_item
+                input.input-extra.doctor-choose.client-thirdname(placeholder="Отчество" type="text")
+                .extra-alert.doctor-choose Совпадение. Пожалуйста, сообщите ваше отчество:
+
+              .input-group_item
+                input.input-extra.doctor-choose.client-pasport(placeholder="Серия и номер паспорта" type="text")
+                .extra-alert.doctor-choose Снова совпадение. Введите данные паспорта без пробелов.
+          
           
           .features.home-features
             .feature.home-feature.home-feature__easy
@@ -501,18 +509,51 @@ html
         .container
           .col.col-md8.faq
             h3 Часто задаваемые вопросы
-            ul.faq-list
-              li 
+          
+            #accordion
+              h3
                 a(href="#") Что делать, если нужно записаться на приём к врачу?
-              li 
+              div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+              h3
                 a(href="#") В какую поликлинику обращаться?
-              li 
+              div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+              h3
                 a(href="#") Как записаться?
-              li 
+              div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+              h3
                 a(href="#") Можно ли попасть к узному специаоисту в поликлинике "в обход" терапевта?
-              li 
-                a(href="#") В какую поликлинику обращаться?
-            button.btn.btn-wide-important См. всех
+              div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке. Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке. Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке. Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+              h3
+                a(href="#") Что делать, если нужно записаться на приём к врачу?
+              div Учреждения, предназначенные для записи, указаны на вашем полесе медицинского страхования или на прилагающейся памятке.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          //-   ul.faq-list
+          //-     li 
+          //-       a(href="#") Что делать, если нужно записаться на приём к врачу?
+          //-     li 
+          //-       a(href="#") В какую поликлинику обращаться?
+          //-     li 
+          //-       a(href="#") Как записаться?
+          //-     li 
+          //-       a(href="#") Можно ли попасть к узному специаоисту в поликлинике "в обход" терапевта?
+          //-     li 
+          //-       a(href="#") В какую поликлинику обращаться?
+          //-   button.btn.btn-wide-important См. всех
 
           .col.col-md4.support
             h3 Служба поддержки
@@ -527,9 +568,12 @@ html
           .partners
             .partner
               h3 Партнёры проекта
-            .partner.partner__miaz
-            .partner.partner__skolkovo
-            .partner.partner__reksoft
+            a(href="http://spbmiac.ru/")
+              .partner.partner__miaz
+            a(href="http://school.skolkovo.ru/ru/")
+              .partner.partner__skolkovo
+            a(href="http://www.reksoft.com/ru/")
+              .partner.partner__reksoft
 
       .footer
         .container
@@ -600,5 +644,5 @@ html
           .footer-phone Все права защищены. 2016
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js')
-    script(src='../assets/baron.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js')
     script(src='../assets/script.js')
